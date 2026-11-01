@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Compare every tracked Monster Hunter Wilds quest by HRP, Zenny, clear time and unique rewards. Filter Assignments, Optionals and Events, updated for v1.040." />
+    <title>Monster Hunter Wilds Quest Rewards &amp; HRP Board · Hunter Board</title>
+    <link rel="canonical" href="https://hunterboard.live/wilds/" />
+    <meta name="theme-color" content="#111512" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hunter Board" />
+    <meta property="og:title" content="Monster Hunter Wilds Quest Rewards &amp; HRP Board" />
+    <meta property="og:description" content="Compare Wilds quests by HRP, Zenny and unique rewards, then open a Title Update 4 build for any weapon." />
+    <meta property="og:url" content="https://hunterboard.live/wilds/" />
+    <meta property="og:image" content="https://hunterboard.live/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Monster Hunter Wilds Quest Rewards &amp; HRP Board" />
+    <meta name="twitter:description" content="Compare Wilds quests by HRP, Zenny and unique rewards." />
+    <meta name="twitter:image" content="https://hunterboard.live/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../shared/styles.css" />
+    <link rel="stylesheet" href="../shared/site.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Monster Hunter Wilds Quest Rewards & HRP Board",
+        "url": "https://hunterboard.live/wilds/",
+        "description": "Quest reward comparison for Monster Hunter Wilds, tagged to game version 1.040.",
+        "isPartOf": { "@type": "WebSite", "name": "Hunter Board", "url": "https://hunterboard.live/" }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="Hunter Board home">
+        <span class="brand-mark">H</span>
+        <span>HUNTER <b>BOARD</b></span>
+      </a>
+      <nav class="game-switch" aria-label="Game sections">
+        <a class="current" href="index.html" aria-current="true">WILDS</a>
+        <a href="../outlanders/index.html">OUTLANDERS</a>
+      </nav>
+      <nav class="topnav" aria-label="Monster Hunter Wilds navigation">
+        <a class="current" href="index.html">QUEST BOARD</a>
+        <a href="builds.html">BUILDS</a>
+        <a href="#sources">SOURCES</a>
+      </nav>
+      <span class="data-badge"><i></i> DATA v1.040</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow">HUNTER'S FIELD NOTES · SEASON 01</div>
+        <h1>Plan your climb<br /><em>to HR 999.</em></h1>
+        <p>Compare HRP, Zenny, and unique rewards across Monster Hunter Wilds quests.</p>
+        <div class="hero-actions">
+          <a class="scroll-link" href="#quests">VIEW QUEST BOARD <span>↓</span></a>
+          <a class="scroll-link scroll-link-alt" href="builds.html">CHARACTER BUILDER <span>→</span></a>
+        </div>
+      </section>
+
+      <section class="quests panel" id="quests">
+        <div class="section-heading quest-heading">
+          <div><h2>QUEST BOARD</h2></div>
+          <div class="quest-controls"><label class="select-label" for="sortQuest">SORT BY</label><select id="sortQuest"><option value="xp">Highest HRP</option><option value="money">Most Zenny</option><option value="unique">Unique rewards</option><option value="time">Fastest clear</option><option value="name">Quest name</option></select><label class="select-label" for="questSearch">SEARCH</label><input id="questSearch" class="quest-search" type="search" placeholder="Quest, monster, or reward…" autocomplete="off" /></div>
+        </div>
+        <p class="section-intro">Press <strong>SELECT</strong> on any quest to see its target monsters and rewards. HRP values come from the Kiranico v1.040 database. Zenny and unique rewards are recorded separately; event quests without a published HRP value are shown as “—”. Clear times are rough community estimates, not official data.</p>
+        <div class="filter-bar">
+          <span class="select-label">QUEST TYPE</span>
+          <label class="chip"><input type="checkbox" class="type-filter" value="ASSIGNMENT" checked /><span>ASSIGNMENT</span></label>
+          <label class="chip"><input type="checkbox" class="type-filter" value="OPTIONAL" checked /><span>OPTIONAL</span></label>
+          <label class="chip"><input type="checkbox" class="type-filter" value="EVENT" checked /><span>EVENT</span></label>
+          <span class="filter-count" id="filterCount"></span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>QUEST</th><th>TYPE</th><th>HUNT / TARGET</th><th>HRP / CLEAR</th><th>ZENNY</th><th>QUEST REWARD</th><th>TIME*</th><th></th></tr></thead>
+            <tbody id="questTable"></tbody>
+          </table>
+        </div>
+        <p class="table-note">* Time is an estimate for a comfortable clear, used only to rank quests by efficiency. It is not a speedrun benchmark.</p>
+        <nav class="pagination" id="pagination" aria-label="Quest pages"></nav>
+      </section>
+
+      <section class="how panel">
+        <div class="section-heading"><div><h2>HOW IT WORKS</h2></div></div>
+        <div class="steps"><div><b>01</b><h3>FIND QUESTS</h3><p>Filter by Assignment, Optional, or Event — or search by quest, monster, or reward.</p></div><div><b>02</b><h3>COMPARE REWARDS</h3><p>Compare HRP per clear, Zenny, and unique rewards.</p></div><div><b>03</b><h3>CHECK DETAILS</h3><p>Select a quest to see its targets and reward breakdown.</p></div></div>
+      </section>
+
+      <section class="sources panel" id="sources">
+        <div class="section-heading">
+          <div><h2>DATA SOURCES</h2></div>
+          <p>Where the quest numbers come from.</p>
+        </div>
+        <div class="source-grid">
+          <article class="source-card">
+            <span class="source-tag">PRIMARY</span>
+            <h3>Kiranico — Wilds Database</h3>
+            <p>Quest HRP values, star ranks, target monsters, and monster HP. The dataset is tagged to game version 1.040.</p>
+            <a href="https://mhwilds.kiranico.com/en/data/quests" target="_blank" rel="noopener noreferrer">mhwilds.kiranico.com</a>
+          </article>
+          <article class="source-card">
+            <span class="source-tag">PRIMARY</span>
+            <h3>In-game Quest Details</h3>
+            <p>Zenny, HRP, and reward items shown on the quest info screen in Wilds. This is the source of truth when a community database disagrees.</p>
+            <span class="source-note">Quest Counter / posted quest screen</span>
+          </article>
+          <article class="source-card">
+            <span class="source-tag">CROSS-CHECK</span>
+            <h3>Fextralife Wiki — Quests</h3>
+            <p>Quest availability, unlock conditions, event quest objectives, and event reward summaries.</p>
+            <a href="https://monsterhunterwilds.wiki.fextralife.com/Quests" target="_blank" rel="noopener noreferrer">monsterhunterwilds.wiki.fextralife.com</a>
+          </article>
+          <article class="source-card">
+            <span class="source-tag">EVENTS</span>
+            <h3>Official Wilds Update Notes</h3>
+            <p>Event quest rotations and newly added content. Event quests change over time, so availability shown here can fall out of date.</p>
+            <a href="https://info.monsterhunter.com/wilds/update/en-us/Ver.1.040.00.00.html" target="_blank" rel="noopener noreferrer">info.monsterhunter.com</a>
+          </article>
+        </div>
+        <div class="notice"><span>!</span> Data last reviewed for <strong>game version 1.040</strong>. Wilds has no public API for player HR or total HRP, so this tool never reads your account — every number is entered manually.</div>
+      </section>
+
+      <section class="sources panel" id="credits">
+        <div class="section-heading">
+          <div><h2>CREDITS</h2></div>
+          <p>Built by a fan, with attribution.</p>
+        </div>
+        <div class="source-grid">
+          <article class="source-card">
+            <span class="source-tag">CREATED BY</span>
+            <h3>anzaniy</h3>
+            <p>Design, code, and data curation for this fan project. Built with plain HTML, CSS, and JavaScript — no template or framework.</p>
+          </article>
+          <article class="source-card">
+            <span class="source-tag">ATTRIBUTION</span>
+            <h3>Icons and data</h3>
+            <p>Monster icons are used under CC BY-SA from the Monster Hunter Wiki; weapon icons come from the official Wilds icon set. Quest data comes from Kiranico, Fextralife, Game8, and official update notes.</p>
+          </article>
+        </div>
+        <a class="credit-link" href="../credits.html">FULL CREDITS &amp; ATTRIBUTION →</a>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div><h2>ALSO ON THE BOARD</h2></div>
+          <p>Outlanders launched on 29 October 2026.</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="../outlanders/index.html">OPEN THE OUTLANDERS HUB</a>
+          <a class="btn ghost" href="builds.html">CHARACTER BUILDS</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>HUNTER BOARD</span>
+      <span>Created by <b>anzaniy</b> · Fan-made · Not affiliated with CAPCOM</span>
+      <span class="footer-links"><a href="../about.html">ABOUT</a> · <a href="../contact.html">CONTACT</a> · <a href="../privacy.html">PRIVACY</a> · <a href="../credits.html">CREDITS</a></span>
+    </footer>
+    <script src="event-quests.js"></script>
+    <script src="quests-data.js"></script>
+    <script src="monster-icons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

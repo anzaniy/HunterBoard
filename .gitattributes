@@ -1,0 +1,7 @@
+# Normalise line endings so Windows checkouts do not rewrite the whole site.
+* text=auto eol=lf
+
+*.png binary
+*.ico binary
+*.webp binary
+*.jpg binary

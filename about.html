@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About · Hunter Board</title>
+    <meta name="description" content="What Hunter Board is, who runs it, how the Monster Hunter Wilds and Outlanders data is maintained, and what the site is not." />
+    <link rel="canonical" href="https://hunterboard.live/about.html" />
+    <meta name="theme-color" content="#111512" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hunter Board" />
+    <meta property="og:title" content="About · Hunter Board" />
+    <meta property="og:description" content="A fan-made Monster Hunter reference site: what it covers and how it is maintained." />
+    <meta property="og:url" content="https://hunterboard.live/about.html" />
+    <meta property="og:image" content="https://hunterboard.live/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="shared/styles.css" />
+    <link rel="stylesheet" href="shared/site.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Hunter Board home">
+        <span class="brand-mark">H</span>
+        <span>HUNTER <b>BOARD</b></span>
+      </a>
+      <nav class="game-switch" aria-label="Game sections">
+        <a href="wilds/index.html">WILDS</a>
+        <a href="outlanders/index.html">OUTLANDERS</a>
+      </nav>
+      <nav class="topnav" aria-label="Main navigation">
+        <a class="current" href="about.html" aria-current="page">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <div class="eyebrow">ABOUT</div>
+        <h1>A small board,<br />kept accurate.</h1>
+        <p>Hunter Board is a fan-made reference site for Monster Hunter players: quest rewards for Wilds, endgame builds, and launch notes for Outlanders.</p>
+      </section>
+
+      <section class="prose">
+        <h2>What this site is</h2>
+        <p>Two tools and one reference section, built as plain HTML, CSS and JavaScript:</p>
+        <ul>
+          <li><strong>Wilds Quest Board</strong> — 155 tracked quest entries, filterable by type, sortable by HRP, Zenny, unique rewards or clear time, with a full reward breakdown per quest.</li>
+          <li><strong>Wilds Character Builds</strong> — one recommended Title Update 4 build for each of the 14 weapon types, with skills, set bonuses and every armor piece linked to the monster that drops it.</li>
+          <li><strong>Outlanders Hub</strong> — launch facts, hunter roles, buddies, confirmed Adventurers and Radiant species, written from official sources.</li>
+        </ul>
+        <p>There is no framework, no build step and no database. Every page is a static file, which is why the site loads quickly on a phone and works with JavaScript disabled (the tables simply do not populate).</p>
+
+        <h2>Who runs it</h2>
+        <p>Hunter Board is designed, coded and maintained by <strong>anzaniy</strong> as an independent hobby project. It is not a company, not a wiki, and not an official product. There is no editorial team — corrections come from readers, and they are genuinely useful.</p>
+
+        <h2>How the data is maintained</h2>
+        <p>Wilds quest values are cross-checked against Kiranico, the in-game quest screen, Fextralife and the official update notes, then tagged to a game version (currently <strong>1.040</strong>). Builds follow Game8's Title Update 4 index. Outlanders facts come from the official site and Capcom's press release; anything sourced from community trackers is labelled as provisional.</p>
+        <p>When a patch changes something, the page is updated and the version tag moves with it. Where a number cannot be verified, it is left blank or marked with “—” rather than guessed.</p>
+
+        <h2>What this site is not</h2>
+        <ul>
+          <li>It is <strong>not affiliated with, endorsed by or sponsored by CAPCOM</strong>, TiMi Studio Group or Proxima Beta.</li>
+          <li>It does not host game files, mods, cheats, ROMs or account services.</li>
+          <li>It does not ask for your CAPCOM ID, PSN, Steam or Apple/Google account.</li>
+          <li>It does not read your save file. Every HRP number on the Wilds board is typed in by you.</li>
+        </ul>
+
+        <h2>Why it is free</h2>
+        <p>Hunter Board is free to use and has no account system. If traffic grows, the site may be supported by unobtrusive display advertising or optional donations. No tool, table or guide will be placed behind a paywall, and the privacy policy will be updated before any advertising is introduced.</p>
+
+        <h2>Corrections</h2>
+        <p>If something is wrong — a missing reward, an outdated build, a monster in the wrong locale — send the quest name, the platform, and what you see in-game. That is enough to fix it. See the <a href="contact.html">contact page</a>.</p>
+
+        <div class="note-box"><strong>Attribution:</strong> icon and data licences are listed in full on the <a href="credits.html">credits page</a>. Monster Hunter and all related names, monsters and artwork are trademarks or copyrights of CAPCOM CO., LTD.</div>
+      </section>
+    </main>
+
+    <footer>
+      <span>HUNTER BOARD</span>
+      <span>Created by <b>anzaniy</b> · Fan-made · Not affiliated with CAPCOM</span>
+      <span class="footer-links"><a href="about.html">ABOUT</a> · <a href="contact.html">CONTACT</a> · <a href="privacy.html">PRIVACY</a> · <a href="credits.html">CREDITS</a></span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+
+# Editors
+.vscode/
+.idea/
+
+# Temp files that should never ship
+*.tmp
+*.bak
+*.log
+
+# Build artefacts (this project has no build step, but keep the door shut)
+node_modules/
+.wrangler/
+dist/
+
+# Local Wrangler / Pages config with secrets
+.dev.vars
+.env
