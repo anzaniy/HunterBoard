@@ -7,7 +7,9 @@
 .home-hero p{color:var(--muted);font-size:18px;line-height:1.5;max-width:560px;margin:0}
 
 .game-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding:12px 0 30px}
-.game-card{display:block;position:relative;background:var(--panel);border:1px solid var(--line);padding:30px 28px 26px;text-decoration:none;color:var(--ink);transition:border-color .18s,transform .18s}
+.game-card{display:flex;flex-direction:column;position:relative;background:var(--panel);border:1px solid var(--line);padding:30px 28px 26px;text-decoration:none;color:var(--ink);transition:border-color .18s,transform .18s}
+.game-card .card-cta{margin-top:auto;align-self:flex-start}
+.game-card .game-status{align-self:flex-start}
 .game-card:hover,.game-card:focus-visible{border-color:var(--lime);transform:translateY(-2px)}
 .game-card h2{font-family:'Barlow Condensed';font-size:34px;letter-spacing:1px;line-height:1;margin:16px 0 12px;text-transform:uppercase}
 .game-card p{color:var(--muted);font-size:14px;line-height:1.55;margin:0 0 16px}
@@ -45,7 +47,8 @@
 
 .fact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:0 0 40px}
 .fact{background:var(--panel);padding:22px 20px}
-.fact span{display:block;font-size:10px;letter-spacing:1.4px;color:var(--muted);margin-bottom:8px}
+.fact>span{display:block;font-size:10px;letter-spacing:1.4px;color:var(--muted);margin-bottom:8px}
+.fact b span{display:inline;margin:0;font-size:inherit;letter-spacing:inherit;color:inherit}
 .fact b{font-family:'Barlow Condensed';font-size:26px;letter-spacing:.5px;color:var(--lime);font-weight:600}
 
 .btn{display:inline-block;background:var(--lime);color:#152016;text-decoration:none;font-size:11px;font-weight:700;letter-spacing:1.4px;padding:13px 20px;text-transform:uppercase;border:1px solid var(--lime)}
@@ -100,3 +103,30 @@
 @media(max-width:420px){
   .brand>span:last-child{display:none}
 }
+/* ---------- Outlanders monster board ---------- */
+.monster-table{min-width:680px}
+.monster-table th:nth-child(1),.monster-table td:nth-child(1){width:36%}
+.monster-table th:nth-child(2),.monster-table td:nth-child(2){width:9%}
+.monster-table th:nth-child(3),.monster-table td:nth-child(3){width:12%}
+.monster-table th:nth-child(4),.monster-table td:nth-child(4){width:17%}
+.monster-table th:nth-child(5),.monster-table td:nth-child(5){width:15%}
+.monster-table th:nth-child(6),.monster-table td:nth-child(6){width:11%;text-align:right}
+.monster-name{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:700;color:var(--ink)}
+.monster-name .tag{margin:0;font-size:8px;letter-spacing:1.1px;padding:2px 5px;color:var(--lime);border-color:var(--line)}
+.monster-upcoming{color:var(--orange);font-weight:700}
+
+@media(max-width:750px){
+  .monster-table{min-width:0;table-layout:fixed}
+  .monster-table th,.monster-table td{padding:10px 6px;font-size:12px}
+  .monster-table th:nth-child(4),.monster-table td:nth-child(4),
+  .monster-table th:nth-child(5),.monster-table td:nth-child(5){display:none}
+  .monster-table th:nth-child(1),.monster-table td:nth-child(1){width:44%}
+  .monster-table th:nth-child(2),.monster-table td:nth-child(2){width:16%}
+  .monster-table th:nth-child(3),.monster-table td:nth-child(3){width:20%}
+  .monster-table th:nth-child(6),.monster-table td:nth-child(6){width:20%}
+  .monster-name{gap:4px}
+  .monster-name .tag{display:none}
+}
+.qd-link{color:var(--lime);text-decoration:none;border-bottom:1px solid transparent}
+.qd-link:hover,.qd-link:focus-visible{border-bottom-color:var(--lime)}
+.fact b.fact-pair{font-size:22px;white-space:nowrap;display:block}

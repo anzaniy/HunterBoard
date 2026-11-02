@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster Board — Outlanders Roster · Hunter Board</title>
+    <meta name="description" content="Every confirmed Monster Hunter Outlanders monster in one board: large and small monsters, Radiant species, first appearances and what is still missing from the published data." />
+    <link rel="canonical" href="https://hunterboard.live/outlanders/monsters" />
+    <meta name="theme-color" content="#111512" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Hunter Board" />
+    <meta property="og:title" content="Monster Board — Monster Hunter Outlanders Roster" />
+    <meta property="og:description" content="Large and small monsters, Radiant species and first appearances on Aesoland, in one filterable board." />
+    <meta property="og:url" content="https://hunterboard.live/outlanders/monsters" />
+    <meta property="og:image" content="https://hunterboard.live/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Monster Board — Monster Hunter Outlanders Roster" />
+    <meta name="twitter:description" content="Every confirmed Outlanders monster, filterable by size, Radiant status and availability." />
+    <meta name="twitter:image" content="https://hunterboard.live/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../shared/styles.css" />
+    <link rel="stylesheet" href="../shared/site.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="Hunter Board home">
+        <span class="brand-mark">H</span>
+        <span>HUNTER <b>BOARD</b></span>
+      </a>
+      <nav class="game-switch" aria-label="Game sections">
+        <a href="../wilds/index.html">WILDS</a>
+        <a class="current" href="index.html" aria-current="page">OUTLANDERS</a>
+      </nav>
+      <nav class="topnav" aria-label="Outlanders page navigation">
+        <a href="index.html">OVERVIEW</a>
+        <a class="current" href="monsters.html" aria-current="page">MONSTERS</a>
+      </nav>
+    </header>
+
+    <main class="subpage-main">
+      <section class="subpage-hero">
+        <a class="back-link" href="index.html">← OUTLANDERS OVERVIEW</a>
+        <div class="eyebrow">AESOLAND ROSTER · LAUNCH DATA</div>
+        <h1>Every monster<br /><em>on the board.</em></h1>
+        <p>The confirmed Outlanders roster in one table: large and small monsters, which ones are Radiant species, which ones debut in this game, and which are still listed as upcoming. Filter it, search it, open a row for the source.</p>
+      </section>
+
+      <section class="fact-grid" aria-label="Outlanders roster totals">
+        <div class="fact"><span>CONFIRMED MONSTERS</span><b id="totalConfirmed">—</b></div>
+        <div class="fact"><span>RADIANT SPECIES</span><b id="totalRadiant">—</b></div>
+        <div class="fact"><span>LARGE / SMALL</span><b class="fact-pair"><span id="totalLarge">—</span> / <span id="totalSmall">—</span></b></div>
+        <div class="fact"><span>UPCOMING</span><b id="totalUpcoming">—</b></div>
+      </section>
+
+      <section class="panel" id="monsters">
+        <div class="section-heading quest-heading">
+          <div><h2>MONSTER BOARD</h2></div>
+          <div class="quest-controls">
+            <label class="select-label" for="sortMonster">SORT BY</label>
+            <select id="sortMonster">
+              <option value="name">Name A–Z</option>
+              <option value="radiant">Radiant first</option>
+              <option value="size">Large first</option>
+              <option value="new">First appearances</option>
+              <option value="status">Launch roster first</option>
+            </select>
+            <label class="select-label" for="monsterSearch">SEARCH</label>
+            <input id="monsterSearch" class="quest-search" type="search" placeholder="Monster name…" autocomplete="off" />
+          </div>
+        </div>
+        <p class="section-intro">Press <strong>SELECT</strong> on a monster to open its file. This board records only what the sources state — size class, Radiant status, debut and availability. Outlanders has no published weakness table, so no elemental values or HP numbers appear here.</p>
+        <div class="filter-bar">
+          <span class="select-label">SIZE</span>
+          <label class="chip"><input type="checkbox" class="size-filter" value="LARGE" checked /><span>LARGE</span></label>
+          <label class="chip"><input type="checkbox" class="size-filter" value="SMALL" checked /><span>SMALL</span></label>
+          <label class="chip"><input type="checkbox" id="filterRadiant" checked /><span>RADIANT</span></label>
+          <label class="chip"><input type="checkbox" id="filterUpcoming" checked /><span>UPCOMING</span></label>
+          <span class="filter-count" id="monsterCount"></span>
+        </div>
+        <div class="table-wrap">
+          <table class="monster-table">
+            <thead>
+              <tr>
+                <th>MONSTER</th>
+                <th>SIZE</th>
+                <th>CLASS</th>
+                <th>ORIGIN</th>
+                <th>STATUS</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="monsterTable"></tbody>
+          </table>
+        </div>
+        <p class="table-note">Radiant species are monsters altered by Radiantite, Aesoland’s crystal resource. “First appearance” means the monster was introduced in Monster Hunter Outlanders.</p>
+        <nav class="pagination" id="pagination" aria-label="Monster pages"></nav>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div><h2>HOW TO READ THIS BOARD</h2></div>
+          <p>Three things worth knowing before you compare rosters elsewhere.</p>
+        </div>
+        <div class="card-list">
+          <article class="mini-card">
+            <span class="tag">SIZE</span>
+            <h3>Large vs small</h3>
+            <p>Large monsters are the hunt targets. Small monsters are the endemic wildlife you meet on the way — they share the roster but are not quest objectives.</p>
+          </article>
+          <article class="mini-card">
+            <span class="tag">RADIANT</span>
+            <h3>What Radiant means</h3>
+            <p>Radiant species are existing monsters changed by Radiantite. Their appearance and behaviour differ from the base species; they are not simple recolours with higher stats.</p>
+          </article>
+          <article class="mini-card">
+            <span class="tag">COUNTS</span>
+            <h3>Why totals disagree</h3>
+            <p>Trackers count differently: some list only huntable large monsters, others include small monsters and datamined entries. This board follows the wiki roster and labels upcoming entries instead of guessing.</p>
+          </article>
+        </div>
+        <div class="notice"><span>!</span> <strong>No leak data on this page.</strong> Entries come from the public roster maintained by the Monster Hunter Wiki and Game8’s launch coverage. If a monster has no article yet, the board says so rather than filling the gap.</div>
+      </section>
+
+      <section class="panel" id="sources">
+        <div class="section-heading">
+          <div><h2>DATA SOURCES</h2></div>
+          <p>Where the roster comes from.</p>
+        </div>
+        <div class="source-grid">
+          <article class="source-card">
+            <span class="source-tag">PRIMARY</span>
+            <h3>Monster Hunter Wiki — MHOutlanders Monsters</h3>
+            <p>The confirmed roster, split into large and small monsters, with first appearances marked and upcoming monsters listed separately. The board mirrors that split.</p>
+            <a href="https://monsterhunterwiki.org/wiki/MHOutlanders/Monsters" target="_blank" rel="noopener noreferrer">monsterhunterwiki.org</a>
+          </article>
+          <article class="source-card">
+            <span class="source-tag">CROSS-CHECK</span>
+            <h3>Game8 — All Monsters List</h3>
+            <p>Used to cross-check the huntable roster and the launch ordering of large monsters. Game8 updates faster but counts fewer entries than the wiki.</p>
+            <a href="https://game8.co/games/Monster-Hunter-Outlanders/archives/601391" target="_blank" rel="noopener noreferrer">game8.co</a>
+          </article>
+          <article class="source-card">
+            <span class="source-tag">OFFICIAL</span>
+            <h3>Monster Hunter Outlanders — official site</h3>
+            <p>Launch date, platforms, hunter roles and the official description of Radiant species. Used for the wording on this page, not for per-monster stats.</p>
+            <a href="https://www.monsterhunter.com/outlanders/" target="_blank" rel="noopener noreferrer">monsterhunter.com</a>
+          </article>
+          <article class="source-card">
+            <span class="source-tag">NOT USED</span>
+            <h3>Elemental weakness tables</h3>
+            <p>Community weakness charts for Outlanders are still incomplete and inconsistent between trackers, so this board omits them until a value can be checked twice.</p>
+            <span class="source-note">Nothing is estimated or extrapolated from Wilds</span>
+          </article>
+        </div>
+        <div class="notice"><span>!</span> Roster reviewed against the wiki revision of <strong>2 November 2026</strong>. Outlanders is a live game; monsters can be added between updates, and this page will lag behind the game until it is reviewed again.</div>
+      </section>
+    </main>
+
+    <footer>
+      <span>HUNTER BOARD</span>
+      <span>Created by <b>anzaniy</b> · Fan-made · Not affiliated with CAPCOM</span>
+      <span class="footer-links"><a href="../about.html">ABOUT</a> · <a href="../contact.html">CONTACT</a> · <a href="../privacy.html">PRIVACY</a> · <a href="../credits.html">CREDITS</a></span>
+    </footer>
+
+    <script src="monsters-data.js"></script>
+    <script src="monsters.js"></script>
+  </body>
+</html>

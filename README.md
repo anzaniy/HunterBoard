@@ -1,6 +1,6 @@
 # Hunter Board
 
-A fan-made Monster Hunter reference site: quest reward comparison and endgame builds for **Monster Hunter Wilds**, plus a launch reference for **Monster Hunter Outlanders**.
+A fan-made Monster Hunter reference site: quest reward comparison and endgame builds for **Monster Hunter Wilds**, plus a launch reference and monster board for **Monster Hunter Outlanders**.
 
 Live URL: <https://hunterboard.live/>
 
@@ -43,7 +43,10 @@ Pure static HTML, CSS and JavaScript. No build step, no framework, no backend, n
 │       └── weapons/            14 icons
 │
 └── outlanders/
-    └── index.html              launch guide, roles, buddies, Adventurers
+    ├── index.html              launch guide, roles, buddies, Adventurers
+    ├── monsters.html           monster board: filters, search, sort, detail rows
+    ├── monsters-data.js        60 roster entries (40 large, 19 small, 1 upcoming)
+    └── monsters.js             render, filter, sort, pagination, detail logic
 ```
 
 `paths.json` does not exist — every link is relative and written by hand. Run the checker (below) after any rename.
@@ -92,7 +95,7 @@ Notes:
 - **Quests** live in `wilds/quests-data.js`. Each record needs `name`, `type`, `hrp`, `zenny`, `time`, targets and rewards. Keep the `source` field pointing at Kiranico.
 - **Builds** live in `wilds/builds-data.js`; the armor/skill lookup is in `wilds/skills-data.js`.
 - **Monster icon mapping** is a single line-per-monster map in `wilds/monster-icons.js`. This is the file to touch when swapping to original art.
-- **Outlanders** is hand-written HTML in `outlanders/index.html` — no data file yet, because the roster is still settling.
+- **Outlanders** launch content is hand-written HTML in `outlanders/index.html`. The monster board is data-driven: edit `outlanders/monsters-data.js` (one record per monster with `name`, `size`, `radiant`, `debut`, `page`, plus `upcoming` or `flagship` where relevant); `outlanders/monsters.js` renders it. Only add fields the cited sources actually state — no estimated weaknesses or HP.
 
 Whenever the game version changes, update the `DATA v1.040` badge in the Wilds header, the wording in `sources`, and the `lastmod` dates in `sitemap.xml`.
 

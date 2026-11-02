@@ -1,0 +1,75 @@
+// Confirmed monster roster for Monster Hunter Outlanders.
+// Source: Monster Hunter Wiki — MHOutlanders/Monsters (revision of 2 November 2026).
+// The wiki marks a monster in bold when Outlanders is its first appearance; that is the
+// `debut` flag below. `page: false` means the wiki links the name but has no article yet.
+//
+// Only what the source states is recorded here: size class, Radiant status, debut status
+// and availability. CAPCOM has not published elemental weaknesses or HP for Outlanders,
+// so those columns are deliberately absent instead of estimated.
+const outlanderMonsters = [
+  // ---------- Large monsters ----------
+  { name: 'Anjanath', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Anjanath', size: 'LARGE', radiant: true, debut: true, page: true },
+  { name: 'Barroth', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Barroth', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Diablos', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Diablos', size: 'LARGE', radiant: true, debut: true, page: true },
+  { name: 'Black Diablos', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Black Diablos', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Great Girros', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Great Girros', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Great Jagras', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Great Jagras', size: 'LARGE', radiant: true, debut: true, page: true },
+  { name: 'Jyuratodus', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Jyuratodus', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Kulu-Ya-Ku', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Kulu-Ya-Ku', size: 'LARGE', radiant: true, debut: true, page: true },
+  { name: 'Kushala Daora', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Legiana', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Legiana', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Nergigante', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Odogaron', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Odogaron', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Paolumu', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Paolumu', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Pukei-Pukei', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Pukei-Pukei', size: 'LARGE', radiant: true, debut: true, page: true },
+  { name: 'Radobaan', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Radobaan', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Rathalos', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Rathalos', size: 'LARGE', radiant: true, debut: true, page: true },
+  { name: 'Azure Rathalos', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Rathian', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Rathian', size: 'LARGE', radiant: true, debut: true, page: true },
+  { name: 'Pink Rathian', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Pink Rathian', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Ruger Aidal', size: 'LARGE', radiant: false, debut: true, page: true, flagship: true },
+  { name: 'Tobi-Kadachi', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Tobi-Kadachi', size: 'LARGE', radiant: true, debut: true, page: false },
+  { name: 'Tzitzi-Ya-Ku', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Radiant Tzitzi-Ya-Ku', size: 'LARGE', radiant: true, debut: true, page: false },
+
+  // ---------- Small monsters ----------
+  { name: 'Apceros', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Aptonoth', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Gajau', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Radiant Gajau', size: 'SMALL', radiant: true, debut: true, page: true },
+  { name: 'Girros', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Hornetaur', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Radiant Hornetaur', size: 'SMALL', radiant: true, debut: false, page: false },
+  { name: 'Jagras', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Radiant Jagras', size: 'SMALL', radiant: true, debut: true, page: true },
+  { name: 'Kelbi', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Kestodon', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Radiant Kestodon', size: 'SMALL', radiant: true, debut: true, page: true },
+  { name: 'Mernos', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Radiant Mernos', size: 'SMALL', radiant: true, debut: true, page: true },
+  { name: 'Noios', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Raphinos', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Vespoid', size: 'SMALL', radiant: false, debut: false, page: true },
+  { name: 'Radiant Vespoid', size: 'SMALL', radiant: true, debut: true, page: true },
+  { name: 'Warrior Atecoli', size: 'SMALL', radiant: false, debut: false, page: false },
+
+  // ---------- Not in the launch roster yet ----------
+  { name: 'Estrellian', size: 'LARGE', radiant: false, debut: false, page: true, upcoming: true },
+];
