@@ -62,19 +62,30 @@ npx serve .
 
 Then open <http://localhost:8080/>. Opening `index.html` directly with `file://` mostly works, but `fetch`-based features and some browser rules behave differently, so prefer a server.
 
+Neither server resolves the clean URLs that production uses (`/about`, `/wilds/builds`). To preview exactly like production, use the Pages emulator:
+
+```powershell
+npx wrangler pages dev .
+```
+
 ## Deploy (Cloudflare Pages)
 
-1. Push this folder to a GitHub repository (private is fine).
-2. Cloudflare dashboard → **Workers &amp; Pages** → **Create** → **Pages** → **Connect to Git**.
-3. Pick the repo, then set:
-   - **Framework preset:** None
-   - **Build command:** *(leave empty)*
-   - **Build output directory:** `/`
-4. Deploy. The site is live at `<project>.pages.dev`.
-5. **Custom domains** → add `hunterboard.live` (and `www.hunterboard.live` if wanted), then point the domain's nameservers at Cloudflare.
-6. Google Search Console → add the domain property → verify with the DNS TXT record → submit `sitemap.xml`.
+Already wired up:
 
-Cache note: Cloudflare Pages serves `_headers` if you add one. No header rules are required; do not add a `Content-Security-Policy` that blocks `fonts.googleapis.com` or `fonts.gstatic.com` unless you also self-host the fonts.
+- **Repo:** `github.com/anzaniy/HunterBoard`, branch `main`
+- **Cloudflare Pages project:** `hunterboard` → `https://hunterboard.pages.dev`
+- **Custom domains:** `hunterboard.live` + `www.hunterboard.live` (CNAME → `hunterboard.pages.dev`, proxied)
+- **Build:** framework preset *None*, build command *empty*, output directory `/` — Cloudflare still runs a trivial build step, then publishes the repo root.
+
+**Deploying is just `git push origin main`.** Pages picks up the commit and publishes in roughly 10–30 seconds. Watch it under **Workers &amp; Pages → hunterboard → Deployments**.
+
+Notes:
+
+- Pages strips `.html` from URLs with a 308 redirect (`/about.html` → `/about`). Canonicals, `og:url` and `sitemap.xml` therefore use the **clean** URLs. When adding a page, link it either way, but put the clean URL in its canonical.
+- `www.hunterboard.live` currently serves the same content as the apex. The canonical tag consolidates it in search; add a Redirect Rule (**Rules → Redirect Rules**, `www` → apex) if you want a hard 301.
+- Cloudflare Pages serves `_headers` if you add one. No header rules are required; do not add a `Content-Security-Policy` that blocks `fonts.googleapis.com` or `fonts.gstatic.com` unless you also self-host the fonts.
+- SSL/TLS mode should stay **Full (strict)**. Never use *Flexible* with Pages.
+- Google Search Console → domain property → verify with the DNS TXT record → submit `sitemap.xml`.
 
 ## Editing content
 
