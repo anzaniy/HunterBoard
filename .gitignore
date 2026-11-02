@@ -22,3 +22,5 @@ dist/
 # Local Wrangler / Pages config with secrets
 .dev.vars
 .env
+# Graphify generated artifacts
+graphify-out/
