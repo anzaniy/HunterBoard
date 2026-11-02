@@ -1,26 +1,26 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monster Board — Outlanders Roster · Hunter Board</title>
+    <title>Monster Board 窶・Outlanders Roster ﾂｷ Hunter Board</title>
     <meta name="description" content="Every confirmed Monster Hunter Outlanders monster in one board: large and small monsters, Radiant species, first appearances and what is still missing from the published data." />
     <link rel="canonical" href="https://hunterboard.live/outlanders/monsters" />
     <meta name="theme-color" content="#111512" />
     <link rel="icon" href="../favicon.ico" sizes="any" />
-    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon-32.png" type="image/png" />
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
     <link rel="manifest" href="../site.webmanifest" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Hunter Board" />
-    <meta property="og:title" content="Monster Board — Monster Hunter Outlanders Roster" />
+    <meta property="og:title" content="Monster Board 窶・Monster Hunter Outlanders Roster" />
     <meta property="og:description" content="Large and small monsters, Radiant species and first appearances on Aesoland, in one filterable board." />
     <meta property="og:url" content="https://hunterboard.live/outlanders/monsters" />
     <meta property="og:image" content="https://hunterboard.live/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Monster Board — Monster Hunter Outlanders Roster" />
+    <meta name="twitter:title" content="Monster Board 窶・Monster Hunter Outlanders Roster" />
     <meta name="twitter:description" content="Every confirmed Outlanders monster, filterable by size, Radiant status and availability." />
     <meta name="twitter:image" content="https://hunterboard.live/og-image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +33,7 @@
     <div class="grain"></div>
     <header class="topbar">
       <a class="brand" href="../index.html" aria-label="Hunter Board home">
-        <span class="brand-mark">H</span>
+        <img class="brand-logo" src="../logo-hb.png" alt="Hb logo" />
         <span>HUNTER <b>BOARD</b></span>
       </a>
       <nav class="game-switch" aria-label="Game sections">
@@ -48,17 +48,17 @@
 
     <main class="subpage-main">
       <section class="subpage-hero">
-        <a class="back-link" href="index.html">← OUTLANDERS OVERVIEW</a>
-        <div class="eyebrow">AESOLAND ROSTER · LAUNCH DATA</div>
+        <a class="back-link" href="index.html">竊・OUTLANDERS OVERVIEW</a>
+        <div class="eyebrow">AESOLAND ROSTER ﾂｷ LAUNCH DATA</div>
         <h1>Every monster<br /><em>on the board.</em></h1>
         <p>The confirmed Outlanders roster in one table: large and small monsters, which ones are Radiant species, which ones debut in this game, and which are still listed as upcoming. Filter it, search it, open a row for the source.</p>
       </section>
 
       <section class="fact-grid" aria-label="Outlanders roster totals">
-        <div class="fact"><span>CONFIRMED MONSTERS</span><b id="totalConfirmed">—</b></div>
-        <div class="fact"><span>RADIANT SPECIES</span><b id="totalRadiant">—</b></div>
-        <div class="fact"><span>LARGE / SMALL</span><b class="fact-pair"><span id="totalLarge">—</span> / <span id="totalSmall">—</span></b></div>
-        <div class="fact"><span>UPCOMING</span><b id="totalUpcoming">—</b></div>
+        <div class="fact"><span>CONFIRMED MONSTERS</span><b id="totalConfirmed">窶・/b></div>
+        <div class="fact"><span>RADIANT SPECIES</span><b id="totalRadiant">窶・/b></div>
+        <div class="fact"><span>LARGE / SMALL</span><b class="fact-pair"><span id="totalLarge">窶・/span> / <span id="totalSmall">窶・/span></b></div>
+        <div class="fact"><span>UPCOMING</span><b id="totalUpcoming">窶・/b></div>
       </section>
 
       <section class="panel" id="monsters">
@@ -67,17 +67,17 @@
           <div class="quest-controls">
             <label class="select-label" for="sortMonster">SORT BY</label>
             <select id="sortMonster">
-              <option value="name">Name A–Z</option>
+              <option value="name">Name A窶纏</option>
               <option value="radiant">Radiant first</option>
               <option value="size">Large first</option>
               <option value="new">First appearances</option>
               <option value="status">Launch roster first</option>
             </select>
             <label class="select-label" for="monsterSearch">SEARCH</label>
-            <input id="monsterSearch" class="quest-search" type="search" placeholder="Monster name…" autocomplete="off" />
+            <input id="monsterSearch" class="quest-search" type="search" placeholder="Monster name窶ｦ" autocomplete="off" />
           </div>
         </div>
-        <p class="section-intro">Press <strong>SELECT</strong> on a monster to open its file. This board records only what the sources state — size class, Radiant status, debut and availability. Outlanders has no published weakness table, so no elemental values or HP numbers appear here.</p>
+        <p class="section-intro">Press <strong>SELECT</strong> on a monster to open its file. This board records only what the sources state 窶・size class, Radiant status, debut and availability. Outlanders has no published weakness table, so no elemental values or HP numbers appear here.</p>
         <div class="filter-bar">
           <span class="select-label">SIZE</span>
           <label class="chip"><input type="checkbox" class="size-filter" value="LARGE" checked /><span>LARGE</span></label>
@@ -101,7 +101,7 @@
             <tbody id="monsterTable"></tbody>
           </table>
         </div>
-        <p class="table-note">Radiant species are monsters altered by Radiantite, Aesoland’s crystal resource. “First appearance” means the monster was introduced in Monster Hunter Outlanders.</p>
+        <p class="table-note">Radiant species are monsters altered by Radiantite, Aesoland窶冱 crystal resource. 窶廡irst appearance窶・means the monster was introduced in Monster Hunter Outlanders.</p>
         <nav class="pagination" id="pagination" aria-label="Monster pages"></nav>
       </section>
 
@@ -114,7 +114,7 @@
           <article class="mini-card">
             <span class="tag">SIZE</span>
             <h3>Large vs small</h3>
-            <p>Large monsters are the hunt targets. Small monsters are the endemic wildlife you meet on the way — they share the roster but are not quest objectives.</p>
+            <p>Large monsters are the hunt targets. Small monsters are the endemic wildlife you meet on the way 窶・they share the roster but are not quest objectives.</p>
           </article>
           <article class="mini-card">
             <span class="tag">RADIANT</span>
@@ -127,7 +127,7 @@
             <p>Trackers count differently: some list only huntable large monsters, others include small monsters and datamined entries. This board follows the wiki roster and labels upcoming entries instead of guessing.</p>
           </article>
         </div>
-        <div class="notice"><span>!</span> <strong>No leak data on this page.</strong> Entries come from the public roster maintained by the Monster Hunter Wiki and Game8’s launch coverage. If a monster has no article yet, the board says so rather than filling the gap.</div>
+        <div class="notice"><span>!</span> <strong>No leak data on this page.</strong> Entries come from the public roster maintained by the Monster Hunter Wiki and Game8窶冱 launch coverage. If a monster has no article yet, the board says so rather than filling the gap.</div>
       </section>
 
       <section class="panel" id="sources">
@@ -138,19 +138,19 @@
         <div class="source-grid">
           <article class="source-card">
             <span class="source-tag">PRIMARY</span>
-            <h3>Monster Hunter Wiki — MHOutlanders Monsters</h3>
+            <h3>Monster Hunter Wiki 窶・MHOutlanders Monsters</h3>
             <p>The confirmed roster, split into large and small monsters, with first appearances marked and upcoming monsters listed separately. The board mirrors that split.</p>
             <a href="https://monsterhunterwiki.org/wiki/MHOutlanders/Monsters" target="_blank" rel="noopener noreferrer">monsterhunterwiki.org</a>
           </article>
           <article class="source-card">
             <span class="source-tag">CROSS-CHECK</span>
-            <h3>Game8 — All Monsters List</h3>
+            <h3>Game8 窶・All Monsters List</h3>
             <p>Used to cross-check the huntable roster and the launch ordering of large monsters. Game8 updates faster but counts fewer entries than the wiki.</p>
             <a href="https://game8.co/games/Monster-Hunter-Outlanders/archives/601391" target="_blank" rel="noopener noreferrer">game8.co</a>
           </article>
           <article class="source-card">
             <span class="source-tag">OFFICIAL</span>
-            <h3>Monster Hunter Outlanders — official site</h3>
+            <h3>Monster Hunter Outlanders 窶・official site</h3>
             <p>Launch date, platforms, hunter roles and the official description of Radiant species. Used for the wording on this page, not for per-monster stats.</p>
             <a href="https://www.monsterhunter.com/outlanders/" target="_blank" rel="noopener noreferrer">monsterhunter.com</a>
           </article>
@@ -167,8 +167,8 @@
 
     <footer>
       <span>HUNTER BOARD</span>
-      <span>Created by <b>anzaniy</b> · Fan-made · Not affiliated with CAPCOM</span>
-      <span class="footer-links"><a href="../about.html">ABOUT</a> · <a href="../contact.html">CONTACT</a> · <a href="../privacy.html">PRIVACY</a> · <a href="../credits.html">CREDITS</a></span>
+      <span>Created by <b>anzaniy</b> ﾂｷ Fan-made ﾂｷ Not affiliated with CAPCOM</span>
+      <span class="footer-links"><a href="../about.html">ABOUT</a> ﾂｷ <a href="../contact.html">CONTACT</a> ﾂｷ <a href="../privacy.html">PRIVACY</a> ﾂｷ <a href="../credits.html">CREDITS</a></span>
     </footer>
 
     <script src="monsters-data.js"></script>
