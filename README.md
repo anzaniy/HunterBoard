@@ -18,7 +18,8 @@ Pure static HTML, CSS and JavaScript. No build step, no framework, no backend, n
 ├── credits.html                licences + data sources for both games
 ├── robots.txt
 ├── sitemap.xml
-├── favicon.ico / favicon.svg
+├── logo-hb.png                 header logo (Hb mark)
+├── favicon.ico / favicon-16.png / favicon-32.png
 ├── apple-touch-icon.png / icon-192.png / icon-512.png
 ├── og-image.png                1200×630 social preview
 │
