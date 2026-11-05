@@ -111,6 +111,10 @@
 .monster-table th:nth-child(4),.monster-table td:nth-child(4){width:17%}
 .monster-table th:nth-child(5),.monster-table td:nth-child(5){width:15%}
 .monster-table th:nth-child(6),.monster-table td:nth-child(6){width:11%;text-align:right}
+.monster-cell{display:flex;align-items:center;gap:10px}
+.monster-table-icon{width:32px;height:32px;object-fit:contain;flex:0 0 32px}
+.monster-table-icon.missing{display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--muted);font-size:13px}
+.qd-head h3{display:flex;align-items:center;gap:12px}
 .monster-name{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:700;color:var(--ink)}
 .monster-name .tag{margin:0;font-size:8px;letter-spacing:1.1px;padding:2px 5px;color:var(--lime);border-color:var(--line)}
 .monster-upcoming{color:var(--orange);font-weight:700}

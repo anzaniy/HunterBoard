@@ -6,6 +6,7 @@
 // Only what the source states is recorded here: size class, Radiant status, debut status
 // and availability. CAPCOM has not published elemental weaknesses or HP for Outlanders,
 // so those columns are deliberately absent instead of estimated.
+// `icon: false` marks an entry with no icon on the wiki's MHOutlanders icon category yet.
 const outlanderMonsters = [
   // ---------- Large monsters ----------
   { name: 'Anjanath', size: 'LARGE', radiant: false, debut: false, page: true },
@@ -38,7 +39,7 @@ const outlanderMonsters = [
   { name: 'Radiant Radobaan', size: 'LARGE', radiant: true, debut: true, page: false },
   { name: 'Rathalos', size: 'LARGE', radiant: false, debut: false, page: true },
   { name: 'Radiant Rathalos', size: 'LARGE', radiant: true, debut: true, page: true },
-  { name: 'Azure Rathalos', size: 'LARGE', radiant: false, debut: false, page: true },
+  { name: 'Azure Rathalos', size: 'LARGE', radiant: false, debut: false, page: true, icon: false },
   { name: 'Rathian', size: 'LARGE', radiant: false, debut: false, page: true },
   { name: 'Radiant Rathian', size: 'LARGE', radiant: true, debut: true, page: true },
   { name: 'Pink Rathian', size: 'LARGE', radiant: false, debut: false, page: true },
@@ -71,5 +72,5 @@ const outlanderMonsters = [
   { name: 'Warrior Atecoli', size: 'SMALL', radiant: false, debut: false, page: false },
 
   // ---------- Not in the launch roster yet ----------
-  { name: 'Estrellian', size: 'LARGE', radiant: false, debut: false, page: true, upcoming: true },
+  { name: 'Estrellian', size: 'LARGE', radiant: false, debut: false, page: true, upcoming: true, icon: false },
 ];

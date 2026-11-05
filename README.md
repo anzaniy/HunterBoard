@@ -47,7 +47,9 @@ Pure static HTML, CSS and JavaScript. No build step, no framework, no backend, n
     ├── index.html              launch guide, roles, buddies, Adventurers
     ├── monsters.html           monster board: filters, search, sort, detail rows
     ├── monsters-data.js        60 roster entries (40 large, 19 small, 1 upcoming)
-    └── monsters.js             render, filter, sort, pagination, detail logic
+    ├── monsters.js             render, filter, sort, pagination, detail logic
+    └── assets/
+        └── monsters/           58 icons, 128px WebP (2 entries have no wiki icon)
 ```
 
 `paths.json` does not exist — every link is relative and written by hand. Run the checker (below) after any rename.

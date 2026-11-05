@@ -52,12 +52,19 @@ function monsterHaystack(monster) {
   ].filter(Boolean).join(' ').toLowerCase();
 }
 
+// 128px WebP icons from the wiki's MHOutlanders icon category, named after the board entry.
+// Kestodon has separate male/female wiki icons; the male icon stands in for the single entry.
+function monsterIconHtml(monster, className) {
+  if (monster.icon === false) return `<span class="${className} missing" aria-hidden="true">?</span>`;
+  return `<img class="${className}" src="assets/monsters/MHO-${monster.name.replace(/ /g, '_')}_Icon.webp" alt="" width="128" height="128" loading="lazy" />`;
+}
+
 function nameCellHtml(monster) {
   const tags = [];
   if (monster.radiant) tags.push('<span class="tag">RADIANT</span>');
   if (monster.flagship) tags.push('<span class="tag">FLAGSHIP</span>');
   if (monster.upcoming) tags.push('<span class="tag">UPCOMING</span>');
-  return `<span class="monster-name"><span>${escapeHtml(monster.name)}</span>${tags.join('')}</span>`;
+  return `<span class="monster-cell">${monsterIconHtml(monster, 'monster-table-icon')}<span class="monster-name"><span>${escapeHtml(monster.name)}</span>${tags.join('')}</span></span>`;
 }
 
 function detailRowHtml(monster) {
@@ -91,7 +98,7 @@ function detailRowHtml(monster) {
       <div class="qd-head">
         <div>
           <span class="qd-label">MONSTER FILE</span>
-          <h3 id="qdName">${escapeHtml(monster.name)}</h3>
+          <h3 id="qdName">${monsterIconHtml(monster, 'monster-icon')}${escapeHtml(monster.name)}</h3>
           <p id="qdMeta">${meta}</p>
         </div>
       </div>
