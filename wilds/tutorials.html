@@ -56,14 +56,22 @@
       </section>
 
       <section class="panel tutorial-list" id="tutorials">
-        <div class="section-heading">
+        <div class="section-heading tutorial-heading">
           <div><h2>MONSTER TUTORIALS</h2></div>
-          <p id="tutorialCount">53 MONSTERS ON THE LIST</p>
+          <div class="tutorial-controls"><label class="select-label" for="tutorialSearch">SEARCH</label><input id="tutorialSearch" class="quest-search" type="search" placeholder="Monster name…" autocomplete="off" /><p id="tutorialCount">53 MONSTERS ON THE LIST</p></div>
         </div>
-        <div class="notice"><span>!</span> This is the list page only for now. Tutorial text, official YouTube embeds and creator credits have not been added yet.</div>
-        <h3 class="tutorial-group-title">LARGE MONSTERS <span>34</span></h3>
+        <div class="filter-bar tutorial-filter-bar">
+          <span class="select-label">REGION</span>
+          <label class="chip"><input type="checkbox" class="region-filter" value="Windward Plains" checked /><span>WINDWARD PLAINS</span></label>
+          <label class="chip"><input type="checkbox" class="region-filter" value="Scarlet Forest" checked /><span>SCARLET FOREST</span></label>
+          <label class="chip"><input type="checkbox" class="region-filter" value="Oilwell Basin" checked /><span>OILWELL BASIN</span></label>
+          <label class="chip"><input type="checkbox" class="region-filter" value="Iceshard Cliffs" checked /><span>ICESHARD CLIFFS</span></label>
+          <label class="chip"><input type="checkbox" class="region-filter" value="Ruins of Wyveria" checked /><span>RUINS OF WYVERIA</span></label>
+          <label class="chip"><input type="checkbox" class="region-filter" value="Wounded Hollow" checked /><span>WOUNDED HOLLOW</span></label>
+        </div>
+        <h3 class="tutorial-group-title">LARGE MONSTERS <span id="largeTutorialCount">34</span></h3>
         <div class="tutorial-grid" id="largeTutorials"></div>
-        <h3 class="tutorial-group-title">SMALL MONSTERS <span>19</span></h3>
+        <h3 class="tutorial-group-title">SMALL MONSTERS <span id="smallTutorialCount">19</span></h3>
         <div class="tutorial-grid" id="smallTutorials"></div>
       </section>
     </main>

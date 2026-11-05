@@ -90,21 +90,43 @@
 
 /* ---------- Wilds monster tutorial index ---------- */
 .tutorial-list{padding-bottom:60px}
+.tutorial-heading{align-items:center}
+.tutorial-controls{display:flex;align-items:center;gap:10px}
+.tutorial-controls input{margin:0;width:190px;padding:9px 10px;font-size:13px}
+.tutorial-controls p{margin:0;color:var(--muted);font-size:11px;letter-spacing:1px;white-space:nowrap}
+.tutorial-filter-bar{margin:0 0 28px}
 .tutorial-group-title{display:flex;align-items:baseline;gap:10px;margin:38px 0 14px;font:700 24px 'Barlow Condensed';letter-spacing:1px}
 .tutorial-group-title span{color:var(--lime);font-size:12px;letter-spacing:1.5px}
-.tutorial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.tutorial-card{display:flex;align-items:center;gap:14px;min-height:118px;padding:17px;background:var(--panel)}
+.tutorial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.tutorial-card{display:flex;align-items:center;gap:14px;min-height:118px;padding:17px;background:var(--panel);color:inherit;text-decoration:none}
+a.tutorial-card:hover,a.tutorial-card:focus-visible{background:#1f251f}
+a.tutorial-card:focus-visible{outline:1px solid var(--lime);outline-offset:-1px}
 .tutorial-card-icon{display:grid;place-items:center;width:68px;height:68px;flex:0 0 68px;background:#121712;border:1px solid var(--line)}
 .tutorial-card-icon img{width:64px;height:64px;object-fit:contain}
 .tutorial-icon-missing{color:var(--muted);font:700 20px 'Barlow Condensed'}
-.tutorial-card-copy{min-width:0}
+.tutorial-card-copy{display:block;min-width:0}
 .tutorial-size{display:flex;align-items:center;gap:6px;color:var(--orange);font-size:9px;letter-spacing:1.2px;font-weight:700}
 .tutorial-update{color:var(--lime);border:1px solid var(--line);padding:2px 4px;font-size:8px}
-.tutorial-card h3{margin:6px 0 10px;font:700 20px/1 'Barlow Condensed';letter-spacing:.4px}
+.tutorial-card-name{display:block;margin:6px 0 10px;font:700 20px/1 'Barlow Condensed';letter-spacing:.4px}
 .tutorial-status{color:var(--muted);font-size:8px;letter-spacing:1.1px;font-weight:700}
+.tutorial-status-open{color:var(--lime)}
+.tutorial-empty{grid-column:1/-1;margin:0;padding:25px;color:var(--muted);font-size:13px}
 
-@media(max-width:900px){.tutorial-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){.tutorial-grid{grid-template-columns:1fr}.tutorial-card{min-height:100px}.tutorial-card-icon{width:58px;height:58px;flex-basis:58px}.tutorial-card-icon img{width:54px;height:54px}}
+.tutorial-page-hero{max-width:900px}
+.tutorial-page-title{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.tutorial-page-icon{display:grid;place-items:center;width:120px;height:120px;flex:0 0 120px;background:var(--panel);border:1px solid var(--line)}
+.tutorial-page-icon img{width:104px;height:104px;object-fit:contain}
+.tutorial-page-title h1{font-size:clamp(52px,8vw,100px);margin:0 0 10px}
+.tutorial-page-title p{font-size:16px;margin:0;max-width:420px}
+.tutorial-video-placeholder{display:grid;place-content:center;gap:9px;max-width:760px;aspect-ratio:16/9;background:#0c100d;border:1px dashed var(--line);text-align:center;color:var(--muted);font-size:12px;line-height:1.45;padding:18px}
+.tutorial-video-placeholder strong{color:var(--ink);font-size:11px;letter-spacing:1.3px}
+.tutorial-play{width:0;height:0;margin:0 auto;border-top:16px solid transparent;border-bottom:16px solid transparent;border-left:24px solid var(--orange)}
+.tutorial-page-note{color:var(--muted);font-size:13px;line-height:1.55;margin:18px 0 0;max-width:760px}
+.tutorial-sources li{overflow-wrap:anywhere}
+
+@media(max-width:620px){.tutorial-grid{grid-template-columns:1fr}.tutorial-card{min-height:100px}.tutorial-card-icon{width:58px;height:58px;flex-basis:58px}.tutorial-card-icon img{width:54px;height:54px}.tutorial-page-title{gap:16px}.tutorial-page-icon{width:84px;height:84px;flex-basis:84px}.tutorial-page-icon img{width:72px;height:72px}.tutorial-page-title h1{font-size:48px}}
+@media(max-width:750px){.tutorial-heading{display:block}.tutorial-controls{flex-wrap:wrap}.tutorial-controls input{flex:1;min-width:180px}.tutorial-controls p{flex-basis:100%}}
+@media(max-width:620px){.tutorial-filter-bar{align-items:flex-start}.tutorial-filter-bar .chip{margin-bottom:4px}}
 
 @media(max-width:900px){
   .game-grid{grid-template-columns:1fr}
