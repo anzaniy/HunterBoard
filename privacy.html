@@ -55,7 +55,7 @@
           <li>No cookies and no <code>localStorage</code> — the site stores nothing in your browser.</li>
           <li>No analytics, tracking pixels, fingerprinting or session recording.</li>
           <li>No third-party advertising or ad networks are loaded.</li>
-          <li>Only two external requests happen: Google Fonts, and the links you click yourself.</li>
+          <li>Only one external request happens automatically: Google Fonts. YouTube is contacted only if you press play on a tutorial video.</li>
         </ul>
 
         <h2>What the site itself collects</h2>
@@ -69,8 +69,12 @@
         <p>Typefaces are loaded from Google Fonts. This means your browser contacts <code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>, which discloses your IP address and browser user agent to Google. No cookie is required for this request. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
         <p>If you prefer to avoid that request entirely, a browser extension that blocks third-party font requests will disable it; the site falls back to a system font and remains fully usable.</p>
 
+        <h2>YouTube videos</h2>
+        <p>Monster tutorial pages offer a click-to-load YouTube player. Nothing is fetched from YouTube while the page loads: the player is a local preview with the creator's name, and the video only loads after you press play. Playback uses <code>youtube-nocookie.com</code>.</p>
+        <p>Once you press play, YouTube (Google) may set cookies or local storage and receives your IP address, browser details and the video requested. That request is subject to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>. Every video is credited to its creator, links back to the original upload, and is never rehosted here.</p>
+
         <h2>Links to other sites</h2>
-        <p>Pages link to Kiranico, Fextralife, Game8, the official Monster Hunter site and Capcom's press releases. Once you follow one of those links, you are on someone else's site and their privacy policy applies. Hunter Board does not embed their content or receive data from them.</p>
+        <p>Pages link to Kiranico, Fextralife, Game8, the official Monster Hunter site, Capcom's press releases and the original YouTube uploads. Once you follow one of those links, you are on someone else's site and their privacy policy applies. Hunter Board does not receive data from them.</p>
 
         <h2>Email</h2>
         <p>If you email <a href="mailto:hello@hunterboard.live">hello@hunterboard.live</a>, the address and message are kept only for as long as it takes to handle the request, then deleted. They are never added to a mailing list, sold, or shared — except where a takedown or rights request legally requires it.</p>

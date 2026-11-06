@@ -118,8 +118,17 @@ a.tutorial-card:focus-visible{outline:1px solid var(--lime);outline-offset:-1px}
 .tutorial-page-icon img{width:104px;height:104px;object-fit:contain}
 .tutorial-page-title h1{font-size:clamp(52px,8vw,100px);margin:0 0 10px}
 .tutorial-page-title p{font-size:16px;margin:0;max-width:420px}
-.tutorial-video-placeholder{display:grid;place-content:center;gap:9px;max-width:760px;aspect-ratio:16/9;background:#0c100d;border:1px dashed var(--line);text-align:center;color:var(--muted);font-size:12px;line-height:1.45;padding:18px}
-.tutorial-video-placeholder strong{color:var(--ink);font-size:11px;letter-spacing:1.3px}
+.tutorial-video{position:relative;max-width:760px;aspect-ratio:16/9;background:#0c100d;border:1px solid var(--line);overflow:hidden}
+.tutorial-video-facade{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;width:100%;padding:22px;border:0;background:radial-gradient(circle at 70% 50%,#1b241c,#0c100d 70%);color:var(--ink);font:inherit;text-align:center;cursor:pointer}
+.tutorial-video-facade:hover,.tutorial-video-facade:focus-visible{outline:1px solid var(--lime);outline-offset:-1px}
+.tutorial-video-bg{position:absolute;right:4%;top:50%;transform:translateY(-50%);height:86%;width:auto;max-width:46%;object-fit:contain;opacity:.16;pointer-events:none}
+.tutorial-video-copy{position:relative;display:flex;flex-direction:column;gap:5px;max-width:78%}
+.tutorial-video-copy strong{font:600 15px/1.3 Barlow,Arial,sans-serif;letter-spacing:.2px}
+.tutorial-video-copy span{font-size:10px;letter-spacing:1.3px;color:var(--muted);text-transform:uppercase}
+.tutorial-video-frame{position:absolute;inset:0;width:100%;height:100%;border:0}
+.tutorial-video-credit{color:var(--muted);font-size:12px;line-height:1.6;margin:14px 0 0;max-width:760px}
+.tutorial-video-credit a{color:var(--lime);text-decoration:none}
+.tutorial-video-credit a:hover,.tutorial-video-credit a:focus-visible{text-decoration:underline}
 .tutorial-play{width:0;height:0;margin:0 auto;border-top:16px solid transparent;border-bottom:16px solid transparent;border-left:24px solid var(--orange)}
 .tutorial-page-note{color:var(--muted);font-size:13px;line-height:1.55;margin:18px 0 0;max-width:760px}
 .tutorial-sources li{overflow-wrap:anywhere}

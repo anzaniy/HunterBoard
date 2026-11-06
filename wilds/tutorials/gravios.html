@@ -117,14 +117,21 @@
       <section class="panel">
         <div class="section-heading">
           <div><h2>VIDEO TUTORIAL</h2></div>
-          <p>Coming soon</p>
+          <p>Creator-credited · YouTube</p>
         </div>
-        <div class="tutorial-video-placeholder">
-          <span class="tutorial-play" aria-hidden="true"></span>
-          <strong>YOUTUBE TUTORIAL PLACEHOLDER</strong>
-          <span>Official YouTube embed with creator credit will appear here.</span>
+        <div class="tutorial-video" data-video-id="cy1HJg_tiJI" data-video-title="Monster Hunter Wilds - Gravios Guide | Melee POV (With Commentary)">
+          <button class="tutorial-video-facade" type="button">
+            <img class="tutorial-video-bg" src="../assets/monsters/MHWA-Gravios_Icon.webp" alt="" />
+            <span class="tutorial-play" aria-hidden="true"></span>
+            <span class="tutorial-video-copy">
+              <strong>Monster Hunter Wilds - Gravios Guide | Melee POV (With Commentary)</strong>
+              <span>Trophy Guides · YouTube</span>
+            </span>
+          </button>
         </div>
-        <p class="tutorial-page-note">Videos are added later. Only official YouTube embeds are used, with credit to the creator and a "Watch on YouTube" fallback.</p>
+        <p class="tutorial-video-credit">Video by <a href="https://www.youtube.com/@TrophyGuide" target="_blank" rel="noopener noreferrer">Trophy Guides</a> · <a href="https://www.youtube.com/watch?v=cy1HJg_tiJI" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></p>
+        <p class="tutorial-video-credit">Backup guide: <a href="https://www.youtube.com/watch?v=fVkE-nFtO-Y" target="_blank" rel="noopener noreferrer">How To Beat Gravios: Monster Hunter Wilds - Boss Guide</a> by ModernViking</p>
+        <p class="tutorial-page-note">Nothing is requested from YouTube until you press play. Playback uses youtube-nocookie.com.</p>
       </section>
 
       <section class="panel">
@@ -145,5 +152,19 @@
       <span>Created by <b>anzaniy</b> · Fan-made · Not affiliated with CAPCOM</span>
       <span class="footer-links"><a href="../../about.html">ABOUT</a> · <a href="../../contact.html">CONTACT</a> · <a href="../../privacy.html">PRIVACY</a> · <a href="../../credits.html">CREDITS</a></span>
     </footer>
+    <script>
+      document.querySelectorAll('.tutorial-video-facade').forEach((button) => {
+        button.addEventListener('click', () => {
+          const box = button.closest('.tutorial-video');
+          const frame = document.createElement('iframe');
+          frame.src = `https://www.youtube-nocookie.com/embed/${box.dataset.videoId}?autoplay=1&rel=0`;
+          frame.title = box.dataset.videoTitle;
+          frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+          frame.allowFullscreen = true;
+          frame.className = 'tutorial-video-frame';
+          box.replaceChildren(frame);
+        });
+      });
+    </script>
   </body>
 </html>

@@ -34,7 +34,25 @@ const tutorialContent = {
     "element": "Thunder (Monster Hunter Wiki). Fextralife additionally lists Ice as a weakness and Dragon as a resistance — sources conflict on Ice.",
     "parts": "Both forelegs (break rewards are guaranteed on left and right foreleg).",
     "items": "Flash Pod, Shock Trap, Pitfall Trap; Ice Attack or Thunder Attack plus Critical Element / Charge Master (Fextralife).",
-    "update": "None."
+    "update": "None.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "XxL2CB1uWXE",
+        "title": "CHATACABRA Monster Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "HZpqc7-DiIg",
+        "title": "CHATACABRA HUNTING GUIDE - Monster Hunter Wilds",
+        "creator": "PizzaurusRex",
+        "channelUrl": "https://www.youtube.com/@PizzaurusRex",
+        "note": ""
+      }
+    ]
   },
   "Quematrice": {
     "confidence": "high",
@@ -71,7 +89,25 @@ const tutorialContent = {
     "element": "Water; resists Fire. Inflicts Fireblight.",
     "parts": "Head and tail; the tail is severable (tail carve rewards).",
     "items": "Water element weapons; Nulberry, Fire Resistance or Blight Resistance for Fireblight; Flash Pod and both trap types are listed effective.",
-    "update": "None."
+    "update": "None.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "N0LPHynj3DU",
+        "title": "QUEMATRICE HUNTING GUIDE - Monster Hunter Wilds",
+        "creator": "PizzaurusRex",
+        "channelUrl": "https://www.youtube.com/@PizzaurusRex",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "ANNRUp86TaA",
+        "title": "How To Beat Quematrice: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Lala Barina": {
     "confidence": "high",
@@ -108,7 +144,25 @@ const tutorialContent = {
     "element": "Fire; resists Water and Dragon. Inflicts Paralysis.",
     "parts": "Both claws and the petals.",
     "items": "Paralysis Resistance Lv3 (Antipara Jewel) or repeated movement/button input to shorten paralysis; Fire element weapons; Flash Pod and traps listed effective.",
-    "update": "None."
+    "update": "None.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "skhhSSDt5Ac",
+        "title": "A Guide to Hunting the Lala Barina in Monster Hunter Wilds",
+        "creator": "HeriBob117",
+        "channelUrl": "https://www.youtube.com/@heribob117",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "89hoP4jlITI",
+        "title": "How To Beat Lala Barina: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Congalala": {
     "confidence": "high",
@@ -144,7 +198,25 @@ const tutorialContent = {
     "element": "Fire (Monster Hunter Wiki). Fextralife also lists Ice as effective — sources conflict on the secondary element.",
     "parts": "Head, both forelegs, tail.",
     "items": "Deodorant, Stench Resistance, Poison Resistance, Blast Resistance, Tremor Resistance; Flash Pod and both trap types listed effective.",
-    "update": "None in Wilds (no Wilds-specific variant; Emerald Congalala is a separate older monster)."
+    "update": "None in Wilds (no Wilds-specific variant; Emerald Congalala is a separate older monster).",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "PmOC1TRRJb4",
+        "title": "How To Hunt A High Rank Congalala - Guide | Rathalos Watch",
+        "creator": "RathalosWatch",
+        "channelUrl": "https://www.youtube.com/@RathalosWatch",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "Rg5rInRfAuY",
+        "title": "How To Beat Congalala: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Balahara": {
     "confidence": "high",
@@ -180,7 +252,25 @@ const tutorialContent = {
     "element": "Thunder; resists Water.",
     "parts": "Head and tail.",
     "items": "Screamer Pod / Sonic Bomb (Baunos), Nulberry or Water Resistance for Waterblight, Thunder element weapons.",
-    "update": "None."
+    "update": "None.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "DZqn_5XrJbE",
+        "title": "BALAHARA Monster Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "YK6CJpppjts",
+        "title": "How To Beat Balahara: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Doshaguma": {
     "confidence": "high",
@@ -216,7 +306,25 @@ const tutorialContent = {
     "element": "Fire (Monster Hunter Wiki). Fextralife also lists Thunder as effective; the monster itself has no element. Sources conflict on the secondary element.",
     "parts": "Both forelegs and the tail (tail hair).",
     "items": "Dung Pods / Large Dung Pods for packs, Earplugs for the weak roar, Tremor Resistance; Fire element weapons.",
-    "update": "Guardian Doshaguma exists as a separate Ruins of Wyveria variant in the base game; no Title Update changes to the standard Doshaguma."
+    "update": "Guardian Doshaguma exists as a separate Ruins of Wyveria variant in the base game; no Title Update changes to the standard Doshaguma.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "dHiULk93kMc",
+        "title": "DOSHAGUMA Monster Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "f9UeUgx1jk0",
+        "title": "Monster Hunter Wilds - Doshaguma [How To Fight It]",
+        "creator": "DigdugDak908",
+        "channelUrl": "https://www.youtube.com/@DigdugDak908",
+        "note": ""
+      }
+    ]
   },
   "Uth Duna": {
     "confidence": "high",
@@ -259,7 +367,25 @@ const tutorialContent = {
     "element": "Thunder; resists Water.",
     "parts": "Head, both forelegs, tail.",
     "items": "Nulberry, Water Resistance or Blight Resistance; Earplugs; Thunder element weapons.",
-    "update": "Arch-Tempered Uth Duna arrived with Title Update 2 and became permanently available on 22 July 2025 (8★ Event Quest \"These Roots Run Deep\", HR50+), unlocking Uth Duna γ armour. It gained new moves (Barrel Roll, Wide Stomp, Lunging Bite). Ver. 1.030.02 (23 Oct 2025) fixed 9★ Arch-Tempered Uth Duna hide toughness being higher than intended, and Ver. 1.041 (Feb 2026) added 10★ Arch-Tempered hunts."
+    "update": "Arch-Tempered Uth Duna arrived with Title Update 2 and became permanently available on 22 July 2025 (8★ Event Quest \"These Roots Run Deep\", HR50+), unlocking Uth Duna γ armour. It gained new moves (Barrel Roll, Wide Stomp, Lunging Bite). Ver. 1.030.02 (23 Oct 2025) fixed 9★ Arch-Tempered Uth Duna hide toughness being higher than intended, and Ver. 1.041 (Feb 2026) added 10★ Arch-Tempered hunts.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "sQBThxyCM3k",
+        "title": "UTH DUNA Video Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "_PjZLR8hkdo",
+        "title": "How To Beat Uth Duna: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Rompopolo": {
     "confidence": "high",
@@ -296,7 +422,25 @@ const tutorialContent = {
     "element": "Water; resists Poison.",
     "parts": "Head, back, both forelegs, tail.",
     "items": "Antidote / Herbal Medicine / Herbal Powder, Poison Resistance; Water element weapons; Earplugs for the weak roar.",
-    "update": "None."
+    "update": "None.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "6zMFSW2gbhA",
+        "title": "ROMPOPOLO Monster Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "qVcU_p-5WbU",
+        "title": "How To Beat Rompopolo: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Rey Dau": {
     "confidence": "high",
@@ -340,7 +484,25 @@ const tutorialContent = {
     "element": "Ice (primary, effective on all parts, best on the head); Water as secondary. Resists Thunder.",
     "parts": "Both wings, the horns, and the tail.",
     "items": "Thunder Resistance / Blight Resistance, Nulberry; Ice Attack (or Water Attack) with Critical Element; Earplugs for the weak roar.",
-    "update": "Arch-Tempered Rey Dau was the first Arch-Tempered monster, added in Title Update 1 (29 April 2025) and made permanently available on 22 July 2025 via the 8★ Event Quest \"A Silent Flash\" (HR50+), unlocking Rey Dau γ armour and the Lord's Soul / Guts skills. Ver. 1.041 (Feb 2026) added 10★ Arch-Tempered Rey Dau."
+    "update": "Arch-Tempered Rey Dau was the first Arch-Tempered monster, added in Title Update 1 (29 April 2025) and made permanently available on 22 July 2025 via the 8★ Event Quest \"A Silent Flash\" (HR50+), unlocking Rey Dau γ armour and the Lord's Soul / Guts skills. Ver. 1.041 (Feb 2026) added 10★ Arch-Tempered Rey Dau.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "dmZYLRk60k0",
+        "title": "REY DAU Monster Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "1WS3ODaKWxY",
+        "title": "How To Beat Rey Dau: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Nerscylla": {
     "confidence": "high",
@@ -386,7 +548,25 @@ const tutorialContent = {
     "element": "Fire while the hide is intact; Thunder after the hide breaks. Resists Water and Dragon. Inflicts Poison, Sleep and Webbed.",
     "parts": "Back spikes (twice; stops the poison), mantle/hide, left claw, and stinger.",
     "items": "Antidote or Herbal Medicine, Energy Drink, Cleanser, plus Poison Resistance, Sleep Resistance and Bind Resistance as counters. Match weapon element to the hide state.",
-    "update": "A \"Nerscylla Clone\" is fought in the Omega Planetes crossover content added with Title Update 3 (released 2025-09-29); no balance changes to the field monster were found."
+    "update": "A \"Nerscylla Clone\" is fought in the Omega Planetes crossover content added with Title Update 3 (released 2025-09-29); no balance changes to the field monster were found.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "QR2fS5a1YzA",
+        "title": "How To Beat Nerscylla: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "LU091RG_-H0",
+        "title": "How to Easily Beat NERSCYLLA in Monster Hunter Wilds",
+        "creator": "Jay Dunna",
+        "channelUrl": "https://www.youtube.com/@JasonDunna",
+        "note": ""
+      }
+    ]
   },
   "Hirabami": {
     "confidence": "high",
@@ -432,7 +612,25 @@ const tutorialContent = {
     "element": "Fire and Thunder; resists Ice. Inflicts Frostblight and a freeze/bind effect.",
     "parts": "Head and tail; the tail can be broken five times. Head and tail wounds topple it when destroyed.",
     "items": "Large Dung Pods, Flash Pods, Cleanser, Heavy Slicing Pods, Bind Resistance.",
-    "update": "None. Tempered and Frenzied variants exist as standard endgame states, not Title Update additions."
+    "update": "None. Tempered and Frenzied variants exist as standard endgame states, not Title Update additions.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "rJvrbtMQxbQ",
+        "title": "How to Easily Beat HIRABAMI in Monster Hunter Wilds",
+        "creator": "Jay Dunna",
+        "channelUrl": "https://www.youtube.com/@JasonDunna",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "9gW5QOiSHo0",
+        "title": "How To Beat Hirabami: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Ajarakan": {
     "confidence": "high",
@@ -477,7 +675,25 @@ const tutorialContent = {
     "element": "Water and Ice; resists Fire. Inflicts Fireblight and Blastblight.",
     "parts": "The forelegs are the main break/weak-point target, exposed after its heated explosion. No further breakable-part list was found in the sources checked.",
     "items": "Nulberry (Fireblight), Deodorant (Blastblight), Chillmantle, traps and environmental items.",
-    "update": "None. Tempered and Frenzied variants exist as standard states."
+    "update": "None. Tempered and Frenzied variants exist as standard states.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "6uuvDyocSWw",
+        "title": "AJARAKAN Monster Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "frij8t-y5Iw",
+        "title": "How to Easily Beat the AJARAKAN in Monster Hunter Wilds",
+        "creator": "Jay Dunna",
+        "channelUrl": "https://www.youtube.com/@JasonDunna",
+        "note": ""
+      }
+    ]
   },
   "Nu Udra": {
     "confidence": "high",
@@ -523,7 +739,25 @@ const tutorialContent = {
     "element": "Water; resists Fire. Inflicts Fireblight.",
     "parts": "All six arms can be severed individually.",
     "items": "Puddle Pods, Nulberry, Fire Resistance, traps; note Flash Pods do nothing.",
-    "update": "Arch-Tempered Nu Udra arrived 2025-10-21 (ET) during Title Update 3 via the permanent HR 100 event quest \"Be Cursed, Ye Shadowy Flame\", and was later added to the 10-star quest \"Scion of the Dark Cradle\" in the February 2026 update. Arch-Tempered changes: faster, longer-reaching moves; a burning aura while ignited that is negated by Adaptability Lv2; it no longer leaves the ignited state unless forced out; new attacks."
+    "update": "Arch-Tempered Nu Udra arrived 2025-10-21 (ET) during Title Update 3 via the permanent HR 100 event quest \"Be Cursed, Ye Shadowy Flame\", and was later added to the 10-star quest \"Scion of the Dark Cradle\" in the February 2026 update. Arch-Tempered changes: faster, longer-reaching moves; a burning aura while ignited that is negated by Adaptability Lv2; it no longer leaves the ignited state unless forced out; new attacks.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "KabLL9DB-9g",
+        "title": "THE BLACK FLAME (NU UDRA) Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "L8J5c2tbbl8",
+        "title": "How to Easily Beat NU UDRA / The BLACK FLAME in Monster Hunter Wilds",
+        "creator": "Jay Dunna",
+        "channelUrl": "https://www.youtube.com/@JasonDunna",
+        "note": ""
+      }
+    ]
   },
   "Guardian Doshaguma": {
     "confidence": "medium",
@@ -564,7 +798,25 @@ const tutorialContent = {
     "element": "Fextralife lists Fire, Ice, Thunder and Dragon, and recommends Fire; Kiranico hitzones show 25 Fire on head and torso, 20 Ice on limbs and 30 Dragon only on wounds. There is no single dominant elemental weakness across sources.",
     "parts": "Forelegs are the focus-strike weak point; wounds can be destroyed but regenerate. A complete breakable-part list was not found in the sources checked.",
     "items": "Adamant Seed, Armorskin, Hardshell Powder or Iron Skin for Defense Down; Earplugs for the weak roar; Tremor Resistance; elemental Slinger ammo.",
-    "update": "None. Tempered and Frenzied variants exist as standard states."
+    "update": "None. Tempered and Frenzied variants exist as standard states.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "oK0FPnS7wcM",
+        "title": "How To Beat Guardian Doshaguma: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "KR59MOZdV8A",
+        "title": "Monster Hunter Wilds Guardian Doshaguma Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": "Recorded during early access."
+      }
+    ]
   },
   "Guardian Rathalos": {
     "confidence": "high",
@@ -609,7 +861,25 @@ const tutorialContent = {
     "element": "Thunder and Dragon; resists Fire. Inflicts Fireblight and Poison.",
     "parts": "Wings and tail (severable) are the priority; the head is also a standard break target.",
     "items": "Nulberry, Flash Pods, Thunder/Dragon Slinger pods, traps.",
-    "update": "None. Tempered and Frenzied variants exist as standard states."
+    "update": "None. Tempered and Frenzied variants exist as standard states.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "rqcHm2r_8wg",
+        "title": "How To Beat Guardian Rathalos: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "g5yT1gVIqBU",
+        "title": "Monster Hunter Wilds - Guardian Rathalos Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": "Early-access melee POV."
+      }
+    ]
   },
   "Jin Dahaad": {
     "confidence": "high",
@@ -655,7 +925,25 @@ const tutorialContent = {
     "element": "Fire; resists Ice. Inflicts Iceblight and Frostblight.",
     "parts": "The four iceplates (Cranial, Abdominal, Tail, Large); legs break and cause knockdowns.",
     "items": "Cleanser or Bind Resistance for Frostblight/freeze, high Ice Resistance and Defense, Fire weapons, and cover awareness.",
-    "update": "Arch-Tempered Jin Dahaad arrived 2025-12-23 (ET) with Title Update 4 via the permanent HR 100 event quest \"Heart of Judecca\", later also in the 10-star quest \"Frozen Knells of the East\" (February 2026). Arch-Tempered changes: more aggressive combos including double body slams, final-area attacks used in the third area, ice-mist whirlwind causing rapid Frostblight, extra delayed icicle explosions, new attacks, icicle clusters while coiled, and a faster nova that is a guaranteed faint."
+    "update": "Arch-Tempered Jin Dahaad arrived 2025-12-23 (ET) with Title Update 4 via the permanent HR 100 event quest \"Heart of Judecca\", later also in the 10-star quest \"Frozen Knells of the East\" (February 2026). Arch-Tempered changes: more aggressive combos including double body slams, final-area attacks used in the third area, ice-mist whirlwind causing rapid Frostblight, extra delayed icicle explosions, new attacks, icicle clusters while coiled, and a faster nova that is a guaranteed faint.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "r-BDWQ9pDK8",
+        "title": "How to beat Jin Dahaad Solo | Monster Hunter Wilds Guide",
+        "creator": "Wilstorm Gaming",
+        "channelUrl": "https://www.youtube.com/@WilstormGaming",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "p1Q-J7Dih4E",
+        "title": "JIN DAHAAD Video Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      }
+    ]
   },
   "Guardian Ebony Odogaron": {
     "confidence": "high",
@@ -700,7 +988,25 @@ const tutorialContent = {
     "element": "Water is the standout (Kiranico gives 40 Water on the head and forelegs; Fextralife lists Water). Inflicts Bleeding and Dragonblight.",
     "parts": "Head, forelegs, hind legs, tail and tail tip; the tail can be severed.",
     "items": "Wild Jerky for Bleeding, Nulberry for Dragonblight, Shock and Pitfall Traps, elemental Slinger ammo.",
-    "update": "None. Tempered and Frenzied variants exist as standard states."
+    "update": "None. Tempered and Frenzied variants exist as standard states.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "wTKl2q0pvZk",
+        "title": "How To Beat Guardian Ebony Odogaron: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "A_y6Z1Iwue8",
+        "title": "Monster Hunter Wilds Guardian Ebony Odogaron Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": ""
+      }
+    ]
   },
   "Xu Wu": {
     "confidence": "high",
@@ -746,7 +1052,25 @@ const tutorialContent = {
     "element": "Ice; resists Dragon. Sources disagree on its own element: Fextralife lists Dragon, while Game8 lists no element.",
     "parts": "Mouth, head and arms; front arms break only, middle and back arms sever, and four hind tentacles can be severed.",
     "items": "Slinger pods, Shock and Pitfall Traps, Ghillie Mantle, Great Thunderbugs, Lump of Wyrmsbane.",
-    "update": "None. Tempered Xu Wu exists as a standard endgame state."
+    "update": "None. Tempered Xu Wu exists as a standard endgame state.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "lmRi_ZUGkyM",
+        "title": "Xu Wu Monster Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "CCQy-lz-vY4",
+        "title": "Monster Hunter Wilds Xu Wu boss fight guide, how to hunt the Xu Wu",
+        "creator": "Kibbles Gaming",
+        "channelUrl": "https://www.youtube.com/@VideoGameDataBank",
+        "note": ""
+      }
+    ]
   },
   "Guardian Arkveld": {
     "confidence": "high",
@@ -783,7 +1107,25 @@ const tutorialContent = {
     "element": "Dragon is listed as its elemental weakness, but Fextralife's elemental table shows only 1-star effectiveness on every part except the chainblades, which are immune — so element contributes little and raw is the practical choice. Poison, sleep, paralysis, blast and stun are all 2-star; Exhaust has no effect. Note the conflict: community write-ups claim Dragon is meaningfully better, the hitzone table does not support that.",
     "parts": "Head, wings/chainblades and tail take the best damage and are the natural Focus Strike targets; the sources checked do not publish a separate break-part table for this monster.",
     "items": "Flash Pods, Shock Trap, Nulberry, Dragon Resistance 3 / Blight Resistance 3, the Wylk Burst armor skill (stamina and red gauge recovery near Wylkrystals), Defender Meal. Raw weapons over element.",
-    "update": "Appears in the Low Rank assignments \"Repel the Guardian Arkveld\" and \"The Pale Dream of a Lone Shadow\". No high-rank or Tempered version is listed in the sources checked."
+    "update": "Appears in the Low Rank assignments \"Repel the Guardian Arkveld\" and \"The Pale Dream of a Lone Shadow\". No high-rank or Tempered version is listed in the sources checked.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "JjRreJ-CK5s",
+        "title": "Monster Hunter Wilds Guardian Arkveld Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": "Explicitly Guardian Arkveld."
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "q1zm2yf1Ozc",
+        "title": "How to Easily Beat GUARDIAN ARKVELD in Monster Hunter Wilds",
+        "creator": "Jay Dunna",
+        "channelUrl": "https://www.youtube.com/@JasonDunna",
+        "note": "Explicitly Guardian Arkveld."
+      }
+    ]
   },
   "Zoh Shia": {
     "confidence": "medium",
@@ -813,7 +1155,25 @@ const tutorialContent = {
     "element": "Elemental values are low across the board, with Dragon the highest at roughly 30. Status thresholds are published (poison 150 rising to 550, etc.), so status is viable but not fast.",
     "parts": "Wingarms and head; wound generation is the core damage loop.",
     "items": "Elemental Slinger ammo (Fire/Water/Thunder/Ice/Dragon Pods) for the crystals, Partbreaker to accelerate wounds, healing and defense items. Do not rely on traps or Flashes.",
-    "update": "Rematched in the High Rank 8-star quest \"Germination\" and the High Rank 10-star event quest \"Hope of the Ancients\"."
+    "update": "Rematched in the High Rank 8-star quest \"Germination\" and the High Rank 10-star event quest \"Hope of the Ancients\".",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "kRl--eSO19o",
+        "title": "How To Hunt A Zho Shia - Guide | Rathalos Watch",
+        "creator": "RathalosWatch",
+        "channelUrl": "https://www.youtube.com/@RathalosWatch",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "uIJqDjlI27A",
+        "title": "Easy Fundamentals for HR Zoh Shia -- Monster Hunter Wilds",
+        "creator": "Driftbye",
+        "channelUrl": "https://www.youtube.com/@Driftbye",
+        "note": ""
+      }
+    ]
   },
   "Yian Kut-Ku": {
     "confidence": "high",
@@ -849,7 +1209,25 @@ const tutorialContent = {
     "element": "Ice is the best element (6 on the head, 8 on the neck); Thunder is a solid second (4 head, 6 neck). Dragon is 0 on the head, torso and wings. Fextralife lists Thunder/Ice as the weaknesses and Dragon as resisted; IGN also lists Water — treat Ice/Thunder as the safe picks.",
     "parts": "Head only (breaking it guarantees a Kut-Ku Ear).",
     "items": "Screamer Pods, Dung Pods, Nulberry, Pitfall/Shock Trap and Tranq Bombs, standard healing.",
-    "update": "Title Update 3 added pack hunts with Yian Kut-Ku as a quest target. A 5-star Tempered version appears in Scarlet Forest field surveys after \"Wyvern Sparks and Rose Thorns\"; a Frenzied version appears in the Iceshard Cliffs after \"Lurking Shadows\" (optional quest \"Aberrant Atrocity\"). Event quest: 4-star \"Kut-Ku Gone Cuckoo\"."
+    "update": "Title Update 3 added pack hunts with Yian Kut-Ku as a quest target. A 5-star Tempered version appears in Scarlet Forest field surveys after \"Wyvern Sparks and Rose Thorns\"; a Frenzied version appears in the Iceshard Cliffs after \"Lurking Shadows\" (optional quest \"Aberrant Atrocity\"). Event quest: 4-star \"Kut-Ku Gone Cuckoo\".",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "11rCxTXOMRA",
+        "title": "Monster Hunter Wilds - Yian Kut-Ku Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "hZuK3yGP_aE",
+        "title": "How To Beat Yian Kut Ku: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": ""
+      }
+    ]
   },
   "Gypceros": {
     "confidence": "medium",
@@ -880,7 +1258,25 @@ const tutorialContent = {
     "element": "Fire is the best element, peaking at 6 on the head. Full elemental table not captured for this entry.",
     "parts": "Head only.",
     "items": "Puddle Pods, Pitfall Trap, Flash resistance via gear or careful positioning, healing.",
-    "update": "Tempered and Frenzied variants both exist."
+    "update": "Tempered and Frenzied variants both exist.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "1Y9THpAl-q0",
+        "title": "GYPCEROS Monster Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "w0kTUfnGCFw",
+        "title": "How To Beat Gypceros: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": "Small channel."
+      }
+    ]
   },
   "Rathian": {
     "confidence": "medium",
@@ -910,7 +1306,25 @@ const tutorialContent = {
     "element": "Dragon is technically the best element, but every value is very low (maximum 6), so raw generally outperforms element.",
     "parts": "Wings and tail (tail is severable).",
     "items": "Flash Pods, Poison Resistance or Antidote/Herbal Medicine, Dung Pods if Rathalos joins.",
-    "update": "A 5-star Tempered version exists; no Frenzied variant listed."
+    "update": "A 5-star Tempered version exists; no Frenzied variant listed.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "7nFIzxEgE2U",
+        "title": "How To Hunt A High Rank Rathian - Guide | Rathalos Watch",
+        "creator": "RathalosWatch",
+        "channelUrl": "https://www.youtube.com/@RathalosWatch",
+        "note": "High Rank only."
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "XckAJxv1GPw",
+        "title": "Monster Hunter Wilds - Rathian Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": ""
+      }
+    ]
   },
   "Guardian Fulgur Anjanath": {
     "confidence": "medium",
@@ -939,7 +1353,25 @@ const tutorialContent = {
     "element": "Ice is the best element, with values of 7 on the nose and wings.",
     "parts": "Head, legs and tail (tail is severable).",
     "items": "Ice weapons, Thunder Resistance or Thunderblight cures, Puddle/Frost/Dragon Pods for the crystals.",
-    "update": "Quests include the 5-star \"Thundering Flowers\", the 5-star \"Guardian Fulgur Anjanath Hunt\" and the event quest \"Running Wild\". A 6-star Tempered version appears after \"Storm-cold Vortex\"."
+    "update": "Quests include the 5-star \"Thundering Flowers\", the 5-star \"Guardian Fulgur Anjanath Hunt\" and the event quest \"Running Wild\". A 6-star Tempered version appears after \"Storm-cold Vortex\".",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "9xXvLSdvsk4",
+        "title": "Monster Hunter Wilds Guardian Fulgur Anjanath Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "eUmcnzU3J2I",
+        "title": "Monster Hunter Wilds Guardian Fulgur Anjanath Boss Guide | Ranged | Main Mission (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": "Same channel, ranged POV."
+      }
+    ]
   },
   "Rathalos": {
     "confidence": "medium",
@@ -971,7 +1403,25 @@ const tutorialContent = {
     "element": "Dragon is best, but values are low (maximum 6), so raw is competitive.",
     "parts": "Head, wings and tail (tail is severable).",
     "items": "Flash Pods, Dung Pods, Earplugs or a shield against the roar combo, Poison resistance if Rathian is present.",
-    "update": "A 6-star Tempered version exists; no Frenzied variant listed."
+    "update": "A 6-star Tempered version exists; no Frenzied variant listed.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "zeU7EazvBEI",
+        "title": "Monster Hunter Wilds - Rathalos Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "30eEqEkykmw",
+        "title": "Key Tips & Strategies On How to Hunt A Rathalos With Ease | Build, Slinger Ammo & More | MH Wilds",
+        "creator": "FT4",
+        "channelUrl": "https://www.youtube.com/@FT4_gaming",
+        "note": "Small channel."
+      }
+    ]
   },
   "Gravios": {
     "confidence": "medium",
@@ -1002,7 +1452,25 @@ const tutorialContent = {
     "element": "Water is the best element, best applied to the belly. Fire is 0 everywhere.",
     "parts": "Head, belly, back, wings, legs, and tail (severable).",
     "items": "Water weapons, Mind's Eye or high sharpness, Poison/Sleep resistance or Nulberries, Antidote.",
-    "update": "A 6-star Tempered version exists; no Frenzied variant listed."
+    "update": "A 6-star Tempered version exists; no Frenzied variant listed.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "cy1HJg_tiJI",
+        "title": "Monster Hunter Wilds - Gravios Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "fVkE-nFtO-Y",
+        "title": "How To Beat Gravios: Monster Hunter Wilds - Boss Guide",
+        "creator": "ModernViking",
+        "channelUrl": "https://www.youtube.com/@VikingVerdicts",
+        "note": "Small channel."
+      }
+    ]
   },
   "Blangonga": {
     "confidence": "high",
@@ -1046,7 +1514,25 @@ const tutorialContent = {
     "element": "Fire and Thunder. Resists Ice and Dragon; Sonic Bombs have no effect. Status effects are broadly effective (sources differ slightly on which are best).",
     "parts": "Fangs (head) twice; tail breakable but not severable.",
     "items": "Earplugs, Cleanser/Nulberry, Hot Drink, Flash Pods, traps.",
-    "update": "Base-game High Rank monster. TU4 added 9★ Tempered versions of Blangonga (with Ajarakan and Guardian Fulgur Anjanath) as rotating event quests. No Arch-Tempered form."
+    "update": "Base-game High Rank monster. TU4 added 9★ Tempered versions of Blangonga (with Ajarakan and Guardian Fulgur Anjanath) as rotating event quests. No Arch-Tempered form.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "uyEs7MBHVTA",
+        "title": "Monster Hunter Wilds - Blangonga Guide | Melee POV (With Commentary)",
+        "creator": "Trophy Guides",
+        "channelUrl": "https://www.youtube.com/@TrophyGuide",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "sufFdb5EvAg",
+        "title": "MH Wilds - Blangonga - Hunts explained",
+        "creator": "Mango x Mochi",
+        "channelUrl": "https://www.youtube.com/@MangoxMochi",
+        "note": ""
+      }
+    ]
   },
   "Gore Magala": {
     "confidence": "high",
@@ -1091,7 +1577,25 @@ const tutorialContent = {
     "element": "Fire is the primary weakness in most guides; Thunder and Dragon are also listed as effective. Water is resisted and Waterblight is nullified. Blast and Exhaust are noted as effective.",
     "parts": "Head, feelers/antennae (only when extended), wings; tail severable.",
     "items": "Nulberry, Antivirus or Frenzy Resistance, Coalescence, Resuscitate, traps. Sources conflict on Flash Pods (one lists it as an immunity, another recommends it) — treat Flash as unreliable.",
-    "update": "Base-game monster; 9★ Tempered available from Ver. 1.021 (Aug 2025). No Arch-Tempered form."
+    "update": "Base-game monster; 9★ Tempered available from Ver. 1.021 (Aug 2025). No Arch-Tempered form.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "m8-3wxuwJXU",
+        "title": "GORE MAGALA Guide | Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "SWqIRtodt6Y",
+        "title": "How To Hunt A High Rank Tempered Gore Magala - Guide | Rathalos Watch",
+        "creator": "RathalosWatch",
+        "channelUrl": "https://www.youtube.com/@RathalosWatch",
+        "note": "Tempered High Rank variant."
+      }
+    ]
   },
   "Arkveld": {
     "confidence": "high",
@@ -1136,7 +1640,25 @@ const tutorialContent = {
     "element": "Dragon is the only elemental weakness. In base form the chainblades take no elemental damage — physical only; that reverses while it is overloaded. All status effects rate 2-star.",
     "parts": "Head, left and right chainblades, tail (severable).",
     "items": "Dragon weapon, full healing stock, Demondrug/Armorskin, Weakness Exploit.",
-    "update": "Arch-Tempered Arkveld added in Ver. 1.041 (17–18 Feb 2026) as permanent event quest \"Freedom from Solitude\" (HR 100+), with γ armour; its 10★ Challenge Quest \"The Proud Child of the Wilds\" ran 18 Mar – 1 Apr 2026."
+    "update": "Arch-Tempered Arkveld added in Ver. 1.041 (17–18 Feb 2026) as permanent event quest \"Freedom from Solitude\" (HR 100+), with γ armour; its 10★ Challenge Quest \"The Proud Child of the Wilds\" ran 18 Mar – 1 Apr 2026.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "e7Zakw4tYRs",
+        "title": "ARKVELD Guide - Monster Hunter Wilds",
+        "creator": "Mobalytics",
+        "channelUrl": "https://www.youtube.com/@Mobalytics",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "sv6lVL8sU3A",
+        "title": "How to Hunt A High Rank Tempered Arkveld - Guide | Rathalos Watch",
+        "creator": "RathalosWatch",
+        "channelUrl": "https://www.youtube.com/@RathalosWatch",
+        "note": "Tempered High Rank variant."
+      }
+    ]
   },
   "Mizutsune": {
     "confidence": "medium-high",
@@ -1175,7 +1697,25 @@ const tutorialContent = {
     "element": "Thunder, Dragon and Ice. Resists Water and Fire.",
     "parts": "Head (twice, which triggers the fire phase), tail (severable).",
     "items": "Bubbly Dance, Thunder weapon, Constitution/stamina skills for slide chasing.",
-    "update": "Title Update 1 (3–4 Apr 2025), unlock at HR 21; Tempered from HR 41+; 9★ at HR 100. No Arch-Tempered form."
+    "update": "Title Update 1 (3–4 Apr 2025), unlock at HR 21; Tempered from HR 41+; 9★ at HR 100. No Arch-Tempered form.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "7RErE7pBvqI",
+        "title": "How To Hunt A High Rank Tempered Mizutsune - Guide | Rathalos Watch",
+        "creator": "RathalosWatch",
+        "channelUrl": "https://www.youtube.com/@RathalosWatch",
+        "note": "Tempered High Rank; base moveset is the same."
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "javAvP39lk0",
+        "title": "Monster Hunter Wilds - This BREAKS Tempered Mizutsune - Easy Hunt Guide, ALL Secrets/Details & More!",
+        "creator": "RageGamingVideos",
+        "channelUrl": "https://www.youtube.com/@RageGamingVideos",
+        "note": "Tempered High Rank."
+      }
+    ]
   },
   "Seregios": {
     "confidence": "high",
@@ -1218,7 +1758,25 @@ const tutorialContent = {
     "element": "Thunder primary; Ice secondary. Fire is a null (no effect); Dragon and Water resisted. Poison, Sleep, Paralysis, Blast, Stun and Exhaust all land; Sonic Bombs do nothing.",
     "parts": "Head, both wings, both hind legs, tail (severable).",
     "items": "Rations for Bleed, Divine Blessing, Flash Pods, Weakness Exploit, Evade Extender.",
-    "update": "Title Update 2 (30 Jun 2025), HR 31 unlock; Tempered HR 41+; 9★ at HR 100. No Arch-Tempered form."
+    "update": "Title Update 2 (30 Jun 2025), HR 31 unlock; Tempered HR 41+; 9★ at HR 100. No Arch-Tempered form.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "uMZZRJHXfI0",
+        "title": "Monster Hunter Wilds - Seregios is Actually RIDICULOUS - Easy Hunt Guide, ALL Insane Secrets & More!",
+        "creator": "RageGamingVideos",
+        "channelUrl": "https://www.youtube.com/@RageGamingVideos",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "wQsaWfoImjU",
+        "title": "Monster Hunter Wilds: How to Beat Seregios – Fight Breakdown, Tips & Rewards",
+        "creator": "Sabre",
+        "channelUrl": "https://www.youtube.com/@Sabre_gaming_tv",
+        "note": ""
+      }
+    ]
   },
   "Lagiacrus": {
     "confidence": "high",
@@ -1262,7 +1820,25 @@ const tutorialContent = {
     "element": "Fire primary; Ice and Dragon secondary. Water and Thunder are null.",
     "parts": "Head/horns, back, forelegs, tail (severable).",
     "items": "Thunder Resistance (Thunderblight leads to paralysis combos), Fire weapon, traps, slinger ammo awareness.",
-    "update": "Title Update 2 (30 Jun 2025), HR 31 after \"A World Turned Upside Down\" + \"Forest Doshaguma\"; Tempered HR 41+; Wounded Hollow spawns from TU3 at HR 100. No Arch-Tempered form."
+    "update": "Title Update 2 (30 Jun 2025), HR 31 after \"A World Turned Upside Down\" + \"Forest Doshaguma\"; Tempered HR 41+; Wounded Hollow spawns from TU3 at HR 100. No Arch-Tempered form.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "f7y5_jiedr8",
+        "title": "Monster Hunter Wilds - Lagiacrus = Actually RIDICULOUS - Easy Hunt Guide, ALL Insane Secrets & More!",
+        "creator": "RageGamingVideos",
+        "channelUrl": "https://www.youtube.com/@RageGamingVideos",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "cEAknwrZfQM",
+        "title": "HOW TO IMPROVE YOUR LAGIACRUS FIGHT IN 5 MINUTES - MONSTER HUNTER WILDS",
+        "creator": "monkeydwilly98",
+        "channelUrl": "https://www.youtube.com/@monkeydwilly98",
+        "note": "Small channel, fight-specific."
+      }
+    ]
   },
   "Omega Planetes": {
     "confidence": "high",
@@ -1306,7 +1882,25 @@ const tutorialContent = {
     "element": "Thunder and Dragon; Fire is a null. Blast is the effective status.",
     "parts": "Head, back, legs/rear power unit (leg breaks feed shield ammo).",
     "items": "Fire Resistance, group healing/Wide-Range, Thunder weapon + Fire backup, Pictomancer.",
-    "update": "Title Update 3 (29 Sep 2025), HR 41 collab unlock; 9★ permanent quest at HR 100. \"Savage\" (Planetes Protocol) is the hard variant: phase-3 moveset from the start, freezing mist (Frostblight), and a second Wave Cannon covering the previously safe side. No Arch-Tempered form."
+    "update": "Title Update 3 (29 Sep 2025), HR 41 collab unlock; 9★ permanent quest at HR 100. \"Savage\" (Planetes Protocol) is the hard variant: phase-3 moveset from the start, freezing mist (Frostblight), and a second Wave Cannon covering the previously safe side. No Arch-Tempered form.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "WF-ailQ1n2U",
+        "title": "Monster Hunter Wilds | HOW TO BEAT OMEGA PLANETES - Complete Guide, Tips & Tricks",
+        "creator": "Arekkz Gaming",
+        "channelUrl": "https://www.youtube.com/@ArekkzGaming",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "WB8a13AP1n4",
+        "title": "Monster Hunter Wilds - How to Make Omega Planetes EASY - Full Guide, OP Secrets & 19 POWERFUL Tips!",
+        "creator": "RageGamingVideos",
+        "channelUrl": "https://www.youtube.com/@RageGamingVideos",
+        "note": ""
+      }
+    ]
   },
   "Gogmazios": {
     "confidence": "high",
@@ -1350,6 +1944,24 @@ const tutorialContent = {
     "element": "Dragon is the true weakness; Fire is required to soften solid oil. Water, Thunder and Ice are null. Blast and Stun are effective; Poison, Sleep and Paralysis are not.",
     "parts": "Head, chest, back, both wings, tail; Mutated Armaments (liquid/gas only).",
     "items": "Fire Resistance 20 (nullifies Fireblight), Tremor Resistance, an oil/sludge movement skill, Cool Drink for the lava phase, Fire + Dragon weapons.",
-    "update": "Title Update 4, 16 Dec 2025 (some outlets list 15 Dec by timezone). Introduced Gogma Artian weapon upgrades and the armour limit-break system. No Arch-Tempered form; cannot be Tempered."
+    "update": "Title Update 4, 16 Dec 2025 (some outlets list 15 Dec by timezone). Introduced Gogma Artian weapon upgrades and the armour limit-break system. No Arch-Tempered form; cannot be Tempered.",
+    "videos": [
+      {
+        "rank": "primary",
+        "youtubeId": "nF9vR8NdKPg",
+        "title": "Monster Hunter Wilds | HOW TO BEAT GOGMAZIOS - Complete Guide, Tips & Tricks",
+        "creator": "Arekkz Gaming",
+        "channelUrl": "https://www.youtube.com/@ArekkzGaming",
+        "note": ""
+      },
+      {
+        "rank": "backup",
+        "youtubeId": "P-e1G84tzz4",
+        "title": "The ULTIMATE Gogmazios Guide for Monster Hunter Wilds!",
+        "creator": "NinoMMO",
+        "channelUrl": "https://www.youtube.com/@NinoMMO",
+        "note": ""
+      }
+    ]
   }
 };
